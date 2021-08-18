@@ -1,0 +1,1113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bv:infoForVaccinus xmlns:bv="http://finalassignment.org/XMLbigvir84Schema">
+   <bv:citizensOver60>
+      <bv:citizen citizenId="cit002">
+         <bv:medicalInformation>
+            <bv:sex>M</bv:sex>
+            <bv:weightKg>62</bv:weightKg>
+            <bv:heightCm>167</bv:heightCm>
+            <bv:age>67</bv:age>
+            <bv:referentPhysicians>
+               <bv:referentPhysician refphysicianId="phy001" speciality="general practitioner"/>
+               <bv:referentPhysician refphysicianId="phy005" speciality="cardiologist"/>
+            </bv:referentPhysicians>
+            <bv:Allergies>Peanut</bv:Allergies>
+         </bv:medicalInformation>
+         <bv:medicalHistory>
+            <bv:medicalActs>
+               <bv:consultation date="2021-06-03" refMedSerId="phy001">
+                  <bv:consultationResult>Patient present bigvir84 symptomas</bv:consultationResult>
+                  <bv:prescription>bigvir84 medical test</bv:prescription>
+               </bv:consultation>
+               <bv:laboratoryTest date="2015-03-04" refMedSerId="lab003">
+                  <bv:pathologieTested>HIV</bv:pathologieTested>
+                  <bv:testResult>0</bv:testResult>
+               </bv:laboratoryTest>
+               <bv:laboratoryTest date="2021-06-04" refMedSerId="lab003">
+                  <bv:pathologieTested>bigvir84</bv:pathologieTested>
+                  <bv:testResult>1</bv:testResult>
+                  <bv:resultDetails>Patient positive to bigvir84 with viral load of 0.2</bv:resultDetails>
+               </bv:laboratoryTest>
+               <bv:surgery date="2012-06-15" refMedSerId="phy005">
+                  <bv:interventionDescription>Hearth replacement surgery</bv:interventionDescription>
+               </bv:surgery>
+            </bv:medicalActs>
+            <bv:infections>
+               <bv:infection pathologie="malaria" date="2014-06-14"/>
+            </bv:infections>
+            <bv:immunizationStatus>
+               <bv:pathologie testDate="2015-06-19">
+                  <bv:name>H1N1 flu</bv:name>
+                  <bv:result>negatif</bv:result>
+               </bv:pathologie>
+               <bv:pathologie testDate="2021-04-15">
+                  <bv:name>bigvir84</bv:name>
+                  <bv:result>negatif</bv:result>
+               </bv:pathologie>
+            </bv:immunizationStatus>
+            <bv:vaccinationStatutes>
+               <bv:vaccin date="2006-09-18">
+                  <bv:pathologie>thetanos</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2002-06-07">
+                  <bv:pathologie>hepatite A</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+            </bv:vaccinationStatutes>
+         </bv:medicalHistory>
+      </bv:citizen>
+      <bv:citizen citizenId="cit003">
+         <bv:medicalInformation>
+            <bv:sex>F</bv:sex>
+            <bv:weightKg>52</bv:weightKg>
+            <bv:heightCm>163</bv:heightCm>
+            <bv:age>73</bv:age>
+            <bv:medications>
+               <bv:medication>
+                  <bv:drugName>buronzan</bv:drugName>
+                  <bv:dailyDosage>125 mg</bv:dailyDosage>
+                  <bv:startDate>2019-05-01</bv:startDate>
+               </bv:medication>
+               <bv:medication>
+                  <bv:drugName>maxipropulsator</bv:drugName>
+                  <bv:dailyDosage>1300 mg</bv:dailyDosage>
+                  <bv:startDate>2018-02-28</bv:startDate>
+               </bv:medication>
+            </bv:medications>
+            <bv:referentPhysicians>
+               <bv:referentPhysician refphysicianId="phy002" speciality="general practitioner"/>
+               <bv:referentPhysician refphysicianId="phy006" speciality="pulmonologist"/>
+            </bv:referentPhysicians>
+         </bv:medicalInformation>
+         <bv:medicalHistory>
+            <bv:medicalActs>
+               <bv:consultation date="2020-06-03" refMedSerId="phy002">
+                  <bv:consultationResult>Patient has the flue</bv:consultationResult>
+                  <bv:prescription>sleep/soup and ibuprofène</bv:prescription>
+               </bv:consultation>
+               <bv:laboratoryTest date="2016-03-04" refMedSerId="lab003">
+                  <bv:pathologieTested>Syphilis</bv:pathologieTested>
+                  <bv:testResult>0</bv:testResult>
+               </bv:laboratoryTest>
+               <bv:laboratoryTest date="2021-06-10" refMedSerId="lab002">
+                  <bv:pathologieTested>bigvir84</bv:pathologieTested>
+                  <bv:testResult>1</bv:testResult>
+                  <bv:resultDetails>Patient positive to bigvir84 with viral load of 0.5</bv:resultDetails>
+               </bv:laboratoryTest>
+               <bv:surgery date="2012-06-15" refMedSerId="phy007">
+                  <bv:interventionDescription>brain implant</bv:interventionDescription>
+               </bv:surgery>
+               <bv:hospitalisation date="2012-06-14" refMedSerId="hosp001">
+                  <bv:reason>brain surgery</bv:reason>
+                  <bv:lengthInDays>15</bv:lengthInDays>
+               </bv:hospitalisation>
+            </bv:medicalActs>
+            <bv:vaccinationStatutes>
+               <bv:vaccin date="2003-05-18">
+                  <bv:pathologie>thetanos</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2001-06-07">
+                  <bv:pathologie>hepatite A</bv:pathologie>
+                  <bv:upToDate>0</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2021-05-07">
+                  <bv:pathologie>bigvir84</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+            </bv:vaccinationStatutes>
+         </bv:medicalHistory>
+      </bv:citizen>
+      <bv:citizen citizenId="cit005">
+         <bv:medicalInformation>
+            <bv:sex>M</bv:sex>
+            <bv:weightKg>120</bv:weightKg>
+            <bv:heightCm>170</bv:heightCm>
+            <bv:age>67</bv:age>
+            <bv:medications>
+               <bv:medication>
+                  <bv:drugName>esoméprazole</bv:drugName>
+                  <bv:dailyDosage>450 mg</bv:dailyDosage>
+                  <bv:startDate>2020-03-15</bv:startDate>
+               </bv:medication>
+               <bv:medication>
+                  <bv:drugName>bisoprolol</bv:drugName>
+                  <bv:dailyDosage>24 mg</bv:dailyDosage>
+                  <bv:startDate>2018-02-28</bv:startDate>
+               </bv:medication>
+               <bv:medication>
+                  <bv:drugName>Pantoprazole </bv:drugName>
+                  <bv:dailyDosage>590 mg</bv:dailyDosage>
+                  <bv:startDate>2020-09-28</bv:startDate>
+               </bv:medication>
+            </bv:medications>
+            <bv:referentPhysicians>
+               <bv:referentPhysician refphysicianId="phy001" speciality="general practitioner"/>
+            </bv:referentPhysicians>
+         </bv:medicalInformation>
+         <bv:medicalHistory>
+            <bv:medicalActs>
+               <bv:consultation date="2021-06-09" refMedSerId="phy005">
+                  <bv:consultationResult>Patient present bigvir84 symptomas</bv:consultationResult>
+                  <bv:prescription>bigvir84 medical test</bv:prescription>
+               </bv:consultation>
+               <bv:laboratoryTest date="2015-03-04" refMedSerId="lab003">
+                  <bv:pathologieTested>Anemia</bv:pathologieTested>
+                  <bv:testResult>1</bv:testResult>
+                  <bv:resultDetails>red cell rate under 25000/l</bv:resultDetails>
+               </bv:laboratoryTest>
+               <bv:surgery date="2016-01-15" refMedSerId="phy008">
+                  <bv:interventionDescription>hip replacement surgery</bv:interventionDescription>
+               </bv:surgery>
+               <bv:hospitalisation date="2018-07-12" refMedSerId="hosp003">
+                  <bv:reason>Heart attack</bv:reason>
+                  <bv:lengthInDays>8</bv:lengthInDays>
+               </bv:hospitalisation>
+            </bv:medicalActs>
+            <bv:infections>
+               <bv:infection pathologie="Flu" date="2018-12-14"/>
+               <bv:infection pathologie="H1N1 Flu" date="2019-01-22"/>
+            </bv:infections>
+            <bv:vaccinationStatutes>
+               <bv:vaccin date="2006-09-18">
+                  <bv:pathologie>thetanos</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2002-06-07">
+                  <bv:pathologie>hepatite A</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2002-06-07">
+                  <bv:pathologie>polio</bv:pathologie>
+                  <bv:upToDate>0</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2021-06-02">
+                  <bv:pathologie>bigvir84</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+            </bv:vaccinationStatutes>
+         </bv:medicalHistory>
+      </bv:citizen>
+      <bv:citizen citizenId="cit007">
+         <bv:medicalInformation>
+            <bv:sex>M</bv:sex>
+            <bv:weightKg>85</bv:weightKg>
+            <bv:heightCm>145</bv:heightCm>
+            <bv:age>61</bv:age>
+            <bv:medications>
+               <bv:medication>
+                  <bv:drugName>prozac</bv:drugName>
+                  <bv:dailyDosage>35 mg</bv:dailyDosage>
+                  <bv:startDate>2020-03-15</bv:startDate>
+               </bv:medication>
+            </bv:medications>
+            <bv:referentPhysicians>
+               <bv:referentPhysician refphysicianId="phy002" speciality="general practitioner"/>
+               <bv:referentPhysician refphysicianId="phy009" speciality="psychiatrist"/>
+            </bv:referentPhysicians>
+         </bv:medicalInformation>
+         <bv:medicalHistory>
+            <bv:medicalActs>
+               <bv:consultation date="2020-02-15" refMedSerId="phy009">
+                  <bv:consultationResult>Patient is depressive</bv:consultationResult>
+                  <bv:prescription>prozac treatment, 35 mg a day during 6 mont</bv:prescription>
+               </bv:consultation>
+               <bv:consultation date="2021-06-08" refMedSerId="phy002">
+                  <bv:consultationResult>Patient present bigvir84 symptomas</bv:consultationResult>
+                  <bv:prescription>bigvir84 medical test</bv:prescription>
+               </bv:consultation>
+               <bv:laboratoryTest date="2021-06-10" refMedSerId="lab003">
+                  <bv:pathologieTested>bigvir84</bv:pathologieTested>
+                  <bv:testResult>0</bv:testResult>
+               </bv:laboratoryTest>
+               <bv:hospitalisation date="2019-10-12" refMedSerId="hosp003">
+                  <bv:reason>Hepatite C</bv:reason>
+                  <bv:lengthInDays>3</bv:lengthInDays>
+               </bv:hospitalisation>
+            </bv:medicalActs>
+            <bv:infections>
+               <bv:infection pathologie="Flu" date="2014-12-13"/>
+               <bv:infection pathologie="malaria" date="2014-01-22"/>
+            </bv:infections>
+            <bv:vaccinationStatutes>
+               <bv:vaccin date="2006-09-18">
+                  <bv:pathologie>thetanos</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2001-06-07">
+                  <bv:pathologie>hepatite A</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2013-06-07">
+                  <bv:pathologie>polio</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2021-06-07">
+                  <bv:pathologie>bigvir84</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+            </bv:vaccinationStatutes>
+         </bv:medicalHistory>
+      </bv:citizen>
+      <bv:citizen citizenId="cit009">
+         <bv:medicalInformation>
+            <bv:sex>M</bv:sex>
+            <bv:weightKg>70</bv:weightKg>
+            <bv:heightCm>183</bv:heightCm>
+            <bv:age>68</bv:age>
+            <bv:medications>
+               <bv:medication>
+                  <bv:drugName>esoméprazole</bv:drugName>
+                  <bv:dailyDosage>250 mg</bv:dailyDosage>
+                  <bv:startDate>2019-04-12</bv:startDate>
+               </bv:medication>
+               <bv:medication>
+                  <bv:drugName>bisoprolol</bv:drugName>
+                  <bv:dailyDosage>85 mg</bv:dailyDosage>
+                  <bv:startDate>2019-03-28</bv:startDate>
+               </bv:medication>
+               <bv:medication>
+                  <bv:drugName>Pantoprazole </bv:drugName>
+                  <bv:dailyDosage>350 mg</bv:dailyDosage>
+                  <bv:startDate>2020-01-22</bv:startDate>
+               </bv:medication>
+               <bv:medication>
+                  <bv:drugName>Viagra</bv:drugName>
+                  <bv:dailyDosage>350 mg</bv:dailyDosage>
+                  <bv:startDate>2020-01-22</bv:startDate>
+               </bv:medication>
+            </bv:medications>
+            <bv:referentPhysicians>
+               <bv:referentPhysician refphysicianId="phy003" speciality="general practitioner"/>
+            </bv:referentPhysicians>
+         </bv:medicalInformation>
+         <bv:medicalHistory>
+            <bv:medicalActs>
+               <bv:consultation date="2010-06-08" refMedSerId="phy002">
+                  <bv:consultationResult>Patient present flu symptomas</bv:consultationResult>
+                  <bv:prescription>sleep and soup / 50mg of aspirine twice a day for 5 days</bv:prescription>
+               </bv:consultation>
+               <bv:hospitalisation date="2020-10-12" refMedSerId="hosp002">
+                  <bv:reason>broken leg</bv:reason>
+                  <bv:lengthInDays>1</bv:lengthInDays>
+               </bv:hospitalisation>
+            </bv:medicalActs>
+            <bv:infections>
+               <bv:infection pathologie="Flu" date="2019-12-14"/>
+               <bv:infection pathologie="malaria" date="2014-01-22"/>
+            </bv:infections>
+            <bv:immunizationStatus>
+               <bv:pathologie testDate="2017-06-19">
+                  <bv:name>H1N1 flu</bv:name>
+                  <bv:result>negatif</bv:result>
+               </bv:pathologie>
+               <bv:pathologie testDate="2021-06-15">
+                  <bv:name>bigvir84</bv:name>
+                  <bv:result>positif</bv:result>
+               </bv:pathologie>
+            </bv:immunizationStatus>
+            <bv:vaccinationStatutes>
+               <bv:vaccin date="2006-09-18">
+                  <bv:pathologie>Thetanos</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2001-06-07">
+                  <bv:pathologie>Hepatite A</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2013-06-07">
+                  <bv:pathologie>Polio</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2021-06-07">
+                  <bv:pathologie>bigvir84</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+            </bv:vaccinationStatutes>
+         </bv:medicalHistory>
+      </bv:citizen>
+      <bv:citizen citizenId="cit011">
+         <bv:medicalInformation>
+            <bv:sex>M</bv:sex>
+            <bv:weightKg>90</bv:weightKg>
+            <bv:heightCm>163</bv:heightCm>
+            <bv:age>74</bv:age>
+            <bv:medications>
+               <bv:medication>
+                  <bv:drugName>buronzan</bv:drugName>
+                  <bv:dailyDosage>125 mg</bv:dailyDosage>
+                  <bv:startDate>2019-05-01</bv:startDate>
+               </bv:medication>
+               <bv:medication>
+                  <bv:drugName>maxipropulsator</bv:drugName>
+                  <bv:dailyDosage>1300 mg</bv:dailyDosage>
+                  <bv:startDate>2018-02-28</bv:startDate>
+               </bv:medication>
+            </bv:medications>
+            <bv:referentPhysicians>
+               <bv:referentPhysician refphysicianId="phy001" speciality="general practitioner"/>
+               <bv:referentPhysician refphysicianId="phy006" speciality="pulmonologist"/>
+            </bv:referentPhysicians>
+         </bv:medicalInformation>
+         <bv:medicalHistory>
+            <bv:medicalActs>
+               <bv:consultation date="2019-05-03" refMedSerId="phy001">
+                  <bv:consultationResult>Patient has the flue</bv:consultationResult>
+                  <bv:prescription>sleep/soup and ibuprofène</bv:prescription>
+               </bv:consultation>
+               <bv:laboratoryTest date="2016-03-04" refMedSerId="lab003">
+                  <bv:pathologieTested>Syphilis</bv:pathologieTested>
+                  <bv:testResult>0</bv:testResult>
+               </bv:laboratoryTest>
+               <bv:laboratoryTest date="2016-03-04" refMedSerId="lab003">
+                  <bv:pathologieTested>HIV</bv:pathologieTested>
+                  <bv:testResult>0</bv:testResult>
+               </bv:laboratoryTest>
+               <bv:laboratoryTest date="2021-06-10" refMedSerId="lab002">
+                  <bv:pathologieTested>bigvir84</bv:pathologieTested>
+                  <bv:testResult>0</bv:testResult>
+               </bv:laboratoryTest>
+               <bv:surgery date="2012-06-15" refMedSerId="phy006">
+                  <bv:interventionDescription>lung partial removal</bv:interventionDescription>
+               </bv:surgery>
+               <bv:hospitalisation date="2012-06-14" refMedSerId="hosp001">
+                  <bv:reason>lung surgery</bv:reason>
+                  <bv:lengthInDays>5</bv:lengthInDays>
+               </bv:hospitalisation>
+            </bv:medicalActs>
+            <bv:vaccinationStatutes>
+               <bv:vaccin date="2003-05-18">
+                  <bv:pathologie>thetanos</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2001-06-07">
+                  <bv:pathologie>hepatite A</bv:pathologie>
+                  <bv:upToDate>0</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2021-05-07">
+                  <bv:pathologie>bigvir84</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+            </bv:vaccinationStatutes>
+         </bv:medicalHistory>
+      </bv:citizen>
+      <bv:citizen citizenId="cit015">
+         <bv:medicalInformation>
+            <bv:sex>M</bv:sex>
+            <bv:weightKg>63</bv:weightKg>
+            <bv:heightCm>176</bv:heightCm>
+            <bv:age>69</bv:age>
+            <bv:referentPhysicians>
+               <bv:referentPhysician refphysicianId="phy003" speciality="general practitioner"/>
+               <bv:referentPhysician refphysicianId="phy005" speciality="cardiologist"/>
+            </bv:referentPhysicians>
+            <bv:Allergies>Pollen</bv:Allergies>
+         </bv:medicalInformation>
+         <bv:medicalHistory>
+            <bv:medicalActs>
+               <bv:consultation date="2021-06-04" refMedSerId="phy001">
+                  <bv:consultationResult>Patient present bigvir84 symptomas</bv:consultationResult>
+                  <bv:prescription>bigvir84 medical test</bv:prescription>
+               </bv:consultation>
+               <bv:laboratoryTest date="2015-03-04" refMedSerId="lab003">
+                  <bv:pathologieTested>HIV</bv:pathologieTested>
+                  <bv:testResult>0</bv:testResult>
+               </bv:laboratoryTest>
+               <bv:laboratoryTest date="2021-06-04" refMedSerId="lab003">
+                  <bv:pathologieTested>bigvir84</bv:pathologieTested>
+                  <bv:testResult>0</bv:testResult>
+               </bv:laboratoryTest>
+               <bv:surgery date="2014-06-15" refMedSerId="phy005">
+                  <bv:interventionDescription>Hearth replacement surgery</bv:interventionDescription>
+               </bv:surgery>
+            </bv:medicalActs>
+            <bv:infections>
+               <bv:infection pathologie="malaria" date="2014-06-14"/>
+            </bv:infections>
+            <bv:immunizationStatus>
+               <bv:pathologie testDate="2015-06-19">
+                  <bv:name>H1N1 flu</bv:name>
+                  <bv:result>negatif</bv:result>
+               </bv:pathologie>
+               <bv:pathologie testDate="2021-04-15">
+                  <bv:name>bigvir84</bv:name>
+                  <bv:result>negatif</bv:result>
+               </bv:pathologie>
+            </bv:immunizationStatus>
+            <bv:vaccinationStatutes>
+               <bv:vaccin date="2006-09-18">
+                  <bv:pathologie>thetanos</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2002-06-07">
+                  <bv:pathologie>hepatite A</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2021-05-25">
+                  <bv:pathologie>bigvir84</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+            </bv:vaccinationStatutes>
+         </bv:medicalHistory>
+      </bv:citizen>
+   </bv:citizensOver60>
+   <bv:citizensUnder60>
+      <bv:citizen citizenId="cit001">
+         <bv:medicalInformation>
+            <bv:sex>M</bv:sex>
+            <bv:weightKg>67</bv:weightKg>
+            <bv:heightCm>187</bv:heightCm>
+            <bv:age>28</bv:age>
+            <bv:referentPhysicians>
+               <bv:referentPhysician refphysicianId="phy002" speciality="general practitioner"/>
+            </bv:referentPhysicians>
+            <bv:Allergies>Pollen Fruits Acariens</bv:Allergies>
+         </bv:medicalInformation>
+         <bv:medicalHistory>
+            <bv:medicalActs>
+               <bv:consultation date="2021-06-08" refMedSerId="phy001">
+                  <bv:consultationResult>Patient present bigvir84 symptomas</bv:consultationResult>
+                  <bv:prescription>bigvir84 medical test</bv:prescription>
+               </bv:consultation>
+               <bv:laboratoryTest date="2021-06-09" refMedSerId="lab003">
+                  <bv:pathologieTested>bigvir84</bv:pathologieTested>
+                  <bv:testResult>1</bv:testResult>
+                  <bv:resultDetails>Patient positive to bigvir84 with viral load of 0.6</bv:resultDetails>
+               </bv:laboratoryTest>
+            </bv:medicalActs>
+            <bv:infections>
+               <bv:infection pathologie="Tuberculoses" date="2012-07-14"/>
+            </bv:infections>
+            <bv:vaccinationStatutes>
+               <bv:vaccin date="2006-09-18">
+                  <bv:pathologie>thetanos</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2002-06-07">
+                  <bv:pathologie>hepatite A</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+            </bv:vaccinationStatutes>
+         </bv:medicalHistory>
+      </bv:citizen>
+      <bv:citizen citizenId="cit004">
+         <bv:medicalInformation>
+            <bv:sex>F</bv:sex>
+            <bv:weightKg>85</bv:weightKg>
+            <bv:heightCm>165</bv:heightCm>
+            <bv:age>29</bv:age>
+            <bv:referentPhysicians>
+               <bv:referentPhysician refphysicianId="phy003" speciality="general practitioner"/>
+            </bv:referentPhysicians>
+            <bv:Allergies>Chocolat Pollen Peanut</bv:Allergies>
+         </bv:medicalInformation>
+         <bv:medicalHistory>
+            <bv:medicalActs>
+               <bv:consultation date="2020-06-03" refMedSerId="phy003">
+                  <bv:consultationResult>Patient has gastroenteritis</bv:consultationResult>
+                  <bv:prescription>1 bag of smecta 2 times a days during 4 days</bv:prescription>
+               </bv:consultation>
+               <bv:consultation date="2021-06-06" refMedSerId="phy005">
+                  <bv:consultationResult>Patient presents bigvir84 symptomas</bv:consultationResult>
+                  <bv:prescription>bigvir84 medical test</bv:prescription>
+               </bv:consultation>
+               <bv:laboratoryTest date="2015-03-04" refMedSerId="lab003">
+                  <bv:pathologieTested>HIV</bv:pathologieTested>
+                  <bv:testResult>0</bv:testResult>
+               </bv:laboratoryTest>
+               <bv:laboratoryTest date="2021-06-07" refMedSerId="lab002">
+                  <bv:pathologieTested>bigvir84</bv:pathologieTested>
+                  <bv:testResult>0</bv:testResult>
+               </bv:laboratoryTest>
+               <bv:hospitalisation date="2016-04-15" refMedSerId="hosp003">
+                  <bv:reason>broken leg</bv:reason>
+                  <bv:lengthInDays>1</bv:lengthInDays>
+               </bv:hospitalisation>
+            </bv:medicalActs>
+            <bv:infections>
+               <bv:infection pathologie="Yellow Fever" date="2017-03-14"/>
+               <bv:infection pathologie="Dengue" date="2019-01-22"/>
+            </bv:infections>
+            <bv:vaccinationStatutes>
+               <bv:vaccin date="2006-09-18">
+                  <bv:pathologie>thetanos</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2002-06-07">
+                  <bv:pathologie>hepatite C</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2021-06-12">
+                  <bv:pathologie>bigvir84</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+            </bv:vaccinationStatutes>
+         </bv:medicalHistory>
+      </bv:citizen>
+      <bv:citizen citizenId="cit006">
+         <bv:medicalInformation>
+            <bv:sex>F</bv:sex>
+            <bv:weightKg>55</bv:weightKg>
+            <bv:heightCm>175</bv:heightCm>
+            <bv:age>41</bv:age>
+            <bv:medications>
+               <bv:medication>
+                  <bv:drugName>prozac</bv:drugName>
+                  <bv:dailyDosage>35 mg</bv:dailyDosage>
+                  <bv:startDate>2020-03-15</bv:startDate>
+               </bv:medication>
+            </bv:medications>
+            <bv:referentPhysicians>
+               <bv:referentPhysician refphysicianId="phy002" speciality="general practitioner"/>
+               <bv:referentPhysician refphysicianId="phy009" speciality="psychiatrist"/>
+            </bv:referentPhysicians>
+         </bv:medicalInformation>
+         <bv:medicalHistory>
+            <bv:medicalActs>
+               <bv:consultation date="2020-02-15" refMedSerId="phy009">
+                  <bv:consultationResult>Patient is depressive</bv:consultationResult>
+                  <bv:prescription>prozac treatment, 35 mg a day during 6 mont</bv:prescription>
+               </bv:consultation>
+               <bv:consultation date="2021-06-08" refMedSerId="phy002">
+                  <bv:consultationResult>Patient present bigvir84 symptomas</bv:consultationResult>
+                  <bv:prescription>bigvir84 medical test</bv:prescription>
+               </bv:consultation>
+               <bv:laboratoryTest date="2021-06-10" refMedSerId="lab003">
+                  <bv:pathologieTested>bigvir84</bv:pathologieTested>
+                  <bv:testResult>1</bv:testResult>
+                  <bv:resultDetails>positive to bigvir84 with viral load of 0,9</bv:resultDetails>
+               </bv:laboratoryTest>
+               <bv:hospitalisation date="2019-10-12" refMedSerId="hosp003">
+                  <bv:reason>Hepatite C</bv:reason>
+                  <bv:lengthInDays>3</bv:lengthInDays>
+               </bv:hospitalisation>
+            </bv:medicalActs>
+            <bv:infections>
+               <bv:infection pathologie="Flu" date="2019-12-14"/>
+               <bv:infection pathologie="malaria" date="2014-01-22"/>
+            </bv:infections>
+            <bv:vaccinationStatutes>
+               <bv:vaccin date="2006-09-18">
+                  <bv:pathologie>thetanos</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2001-06-07">
+                  <bv:pathologie>hepatite A</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2013-06-07">
+                  <bv:pathologie>polio</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+            </bv:vaccinationStatutes>
+         </bv:medicalHistory>
+      </bv:citizen>
+      <bv:citizen citizenId="cit008">
+         <bv:medicalInformation>
+            <bv:sex>F</bv:sex>
+            <bv:weightKg>50</bv:weightKg>
+            <bv:heightCm>155</bv:heightCm>
+            <bv:age>58</bv:age>
+            <bv:medications>
+               <bv:medication>
+                  <bv:drugName>keppra</bv:drugName>
+                  <bv:dailyDosage>500 mg</bv:dailyDosage>
+                  <bv:startDate>2019-02-15</bv:startDate>
+               </bv:medication>
+            </bv:medications>
+            <bv:referentPhysicians>
+               <bv:referentPhysician refphysicianId="phy002" speciality="general practitioner"/>
+               <bv:referentPhysician refphysicianId="phy007" speciality="neurologue / brain surgeon"/>
+            </bv:referentPhysicians>
+         </bv:medicalInformation>
+         <bv:medicalHistory>
+            <bv:medicalActs>
+               <bv:consultation date="2019-01-01" refMedSerId="phy009">
+                  <bv:consultationResult>Patient present multiple signs of epilepsie</bv:consultationResult>
+                  <bv:prescription>consultation with a neurologist</bv:prescription>
+               </bv:consultation>
+               <bv:consultation date="2019-01-05" refMedSerId="phy007">
+                  <bv:consultationResult>Patient present a kyst in the right part of the brain</bv:consultationResult>
+                  <bv:prescription>surgery to remove the kyst, 500mg/day of keppra for 6 month following the surgery </bv:prescription>
+               </bv:consultation>
+               <bv:surgery date="2019-01-12" refMedSerId="phy007">
+                  <bv:generalComments>operation succefull with no postsurgery complications</bv:generalComments>
+                  <bv:interventionDescription>Removal of a kyst in the right hemisphère of the brain</bv:interventionDescription>
+               </bv:surgery>
+               <bv:hospitalisation date="2019-01-12" refMedSerId="hosp002">
+                  <bv:reason>brain surgery</bv:reason>
+                  <bv:lengthInDays>5</bv:lengthInDays>
+               </bv:hospitalisation>
+            </bv:medicalActs>
+            <bv:infections>
+               <bv:infection pathologie="Flu" date="2015-12-13"/>
+            </bv:infections>
+            <bv:vaccinationStatutes>
+               <bv:vaccin date="2006-09-18">
+                  <bv:pathologie>thetanos</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2001-06-07">
+                  <bv:pathologie>hepatite A</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2013-06-07">
+                  <bv:pathologie>polio</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2021-06-13">
+                  <bv:pathologie>bigvir84</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+            </bv:vaccinationStatutes>
+         </bv:medicalHistory>
+      </bv:citizen>
+      <bv:citizen citizenId="cit010">
+         <bv:medicalInformation>
+            <bv:sex>M</bv:sex>
+            <bv:weightKg>120</bv:weightKg>
+            <bv:heightCm>185</bv:heightCm>
+            <bv:age>45</bv:age>
+            <bv:referentPhysicians>
+               <bv:referentPhysician refphysicianId="phy004" speciality="general practitioner"/>
+            </bv:referentPhysicians>
+         </bv:medicalInformation>
+         <bv:medicalHistory>
+            <bv:medicalActs>
+               <bv:consultation date="2014-06-03" refMedSerId="phy004">
+                  <bv:consultationResult>Patient has gastroenteritis</bv:consultationResult>
+                  <bv:prescription>1 bag of smecta 2 times a days during 4 days</bv:prescription>
+               </bv:consultation>
+               <bv:consultation date="2021-06-06" refMedSerId="phy005">
+                  <bv:consultationResult>Patient presents bigvir84 symptomas</bv:consultationResult>
+                  <bv:prescription>bigvir84 medical test</bv:prescription>
+               </bv:consultation>
+               <bv:laboratoryTest date="2015-03-04" refMedSerId="lab003">
+                  <bv:pathologieTested>HIV</bv:pathologieTested>
+                  <bv:testResult>0</bv:testResult>
+               </bv:laboratoryTest>
+               <bv:laboratoryTest date="2021-06-07" refMedSerId="lab002">
+                  <bv:pathologieTested>bigvir84</bv:pathologieTested>
+                  <bv:testResult>1</bv:testResult>
+                  <bv:resultDetails>positif to bigvir84 with viral load of 0,5</bv:resultDetails>
+               </bv:laboratoryTest>
+            </bv:medicalActs>
+            <bv:infections>
+               <bv:infection pathologie="Yellow Fever" date="2017-03-14"/>
+               <bv:infection pathologie="Dengue" date="2019-01-22"/>
+            </bv:infections>
+            <bv:vaccinationStatutes>
+               <bv:vaccin date="2006-09-18">
+                  <bv:pathologie>thetanos</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2002-06-07">
+                  <bv:pathologie>hepatite C</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+            </bv:vaccinationStatutes>
+         </bv:medicalHistory>
+      </bv:citizen>
+      <bv:citizen citizenId="cit012">
+         <bv:medicalInformation>
+            <bv:sex>M</bv:sex>
+            <bv:weightKg>89</bv:weightKg>
+            <bv:heightCm>152</bv:heightCm>
+            <bv:age>52</bv:age>
+            <bv:referentPhysicians>
+               <bv:referentPhysician refphysicianId="phy004" speciality="general practitioner"/>
+            </bv:referentPhysicians>
+         </bv:medicalInformation>
+         <bv:medicalHistory>
+            <bv:medicalActs>
+               <bv:consultation date="2021-06-10" refMedSerId="phy009">
+                  <bv:consultationResult>Patient present symptoms of bigvir84</bv:consultationResult>
+                  <bv:prescription>Laboratory test for bigvir84</bv:prescription>
+               </bv:consultation>
+               <bv:laboratoryTest date="2021-06-11" refMedSerId="lab001">
+                  <bv:pathologieTested>bigvir84</bv:pathologieTested>
+                  <bv:testResult>1</bv:testResult>
+                  <bv:resultDetails>patient positif to bigvir84 with a viral load of 0,1</bv:resultDetails>
+               </bv:laboratoryTest>
+            </bv:medicalActs>
+            <bv:infections>
+               <bv:infection pathologie="Flu" date="2015-12-13"/>
+            </bv:infections>
+            <bv:immunizationStatus>
+               <bv:pathologie testDate="2015-06-19">
+                  <bv:name>H1N1 flu</bv:name>
+                  <bv:result>positif</bv:result>
+               </bv:pathologie>
+               <bv:pathologie testDate="2021-04-15">
+                  <bv:name>bigvir84</bv:name>
+                  <bv:result>negatif</bv:result>
+               </bv:pathologie>
+            </bv:immunizationStatus>
+            <bv:vaccinationStatutes>
+               <bv:vaccin date="2013-09-18">
+                  <bv:pathologie>thetanos</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2002-06-07">
+                  <bv:pathologie>hepatite A</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2011-06-07">
+                  <bv:pathologie>polio</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+            </bv:vaccinationStatutes>
+         </bv:medicalHistory>
+      </bv:citizen>
+      <bv:citizen citizenId="cit013">
+         <bv:medicalInformation>
+            <bv:sex>M</bv:sex>
+            <bv:weightKg>75</bv:weightKg>
+            <bv:heightCm>176</bv:heightCm>
+            <bv:age>39</bv:age>
+            <bv:referentPhysicians>
+               <bv:referentPhysician refphysicianId="phy004" speciality="general practitioner"/>
+            </bv:referentPhysicians>
+         </bv:medicalInformation>
+         <bv:medicalHistory>
+            <bv:medicalActs>
+               <bv:consultation date="2016-06-03" refMedSerId="phy004">
+                  <bv:consultationResult>Patient has gastroenteritis</bv:consultationResult>
+                  <bv:prescription>1 bag of smecta 2 times a days during 4 days</bv:prescription>
+               </bv:consultation>
+               <bv:consultation date="2021-06-06" refMedSerId="phy005">
+                  <bv:consultationResult>Patient presents bigvir84 symptomas</bv:consultationResult>
+                  <bv:prescription>bigvir84 medical test</bv:prescription>
+               </bv:consultation>
+               <bv:laboratoryTest date="2016-03-04" refMedSerId="lab003">
+                  <bv:pathologieTested>HIV</bv:pathologieTested>
+                  <bv:testResult>0</bv:testResult>
+               </bv:laboratoryTest>
+               <bv:laboratoryTest date="2021-06-07" refMedSerId="lab002">
+                  <bv:pathologieTested>bigvir84</bv:pathologieTested>
+                  <bv:testResult>0</bv:testResult>
+               </bv:laboratoryTest>
+            </bv:medicalActs>
+            <bv:infections>
+               <bv:infection pathologie="Yellow Fever" date="2017-03-14"/>
+               <bv:infection pathologie="malaria" date="2019-01-22"/>
+            </bv:infections>
+            <bv:vaccinationStatutes>
+               <bv:vaccin date="2007-09-18">
+                  <bv:pathologie>thetanos</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2004-06-07">
+                  <bv:pathologie>hepatite C</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+            </bv:vaccinationStatutes>
+         </bv:medicalHistory>
+      </bv:citizen>
+      <bv:citizen citizenId="cit014">
+         <bv:medicalInformation>
+            <bv:sex>F</bv:sex>
+            <bv:weightKg>70</bv:weightKg>
+            <bv:heightCm>145</bv:heightCm>
+            <bv:age>60</bv:age>
+            <bv:medications>
+               <bv:medication>
+                  <bv:drugName>prozac</bv:drugName>
+                  <bv:dailyDosage>35 mg</bv:dailyDosage>
+                  <bv:startDate>2020-03-15</bv:startDate>
+               </bv:medication>
+            </bv:medications>
+            <bv:referentPhysicians>
+               <bv:referentPhysician refphysicianId="phy004" speciality="general practitioner"/>
+               <bv:referentPhysician refphysicianId="phy009" speciality="psychiatrist"/>
+            </bv:referentPhysicians>
+         </bv:medicalInformation>
+         <bv:medicalHistory>
+            <bv:medicalActs>
+               <bv:consultation date="2020-02-15" refMedSerId="phy009">
+                  <bv:consultationResult>Patient is depressive</bv:consultationResult>
+                  <bv:prescription>prozac treatment, 35 mg a day during 6 mont</bv:prescription>
+               </bv:consultation>
+               <bv:consultation date="2021-06-08" refMedSerId="phy004">
+                  <bv:consultationResult>Patient present bigvir84 symptomas</bv:consultationResult>
+                  <bv:prescription>bigvir84 medical test</bv:prescription>
+               </bv:consultation>
+               <bv:laboratoryTest date="2021-06-10" refMedSerId="lab003">
+                  <bv:pathologieTested>bigvir84</bv:pathologieTested>
+                  <bv:testResult>0</bv:testResult>
+               </bv:laboratoryTest>
+               <bv:hospitalisation date="2014-10-12" refMedSerId="hosp003">
+                  <bv:reason>Hepatite A</bv:reason>
+                  <bv:lengthInDays>3</bv:lengthInDays>
+               </bv:hospitalisation>
+            </bv:medicalActs>
+            <bv:infections>
+               <bv:infection pathologie="Flu" date="2014-12-13"/>
+               <bv:infection pathologie="malaria" date="2014-01-22"/>
+            </bv:infections>
+            <bv:vaccinationStatutes>
+               <bv:vaccin date="2006-09-18">
+                  <bv:pathologie>thetanos</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2001-06-07">
+                  <bv:pathologie>hepatite A</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2013-06-07">
+                  <bv:pathologie>polio</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2021-06-06">
+                  <bv:pathologie>bigvir84</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+            </bv:vaccinationStatutes>
+         </bv:medicalHistory>
+      </bv:citizen>
+      <bv:citizen citizenId="cit016">
+         <bv:medicalInformation>
+            <bv:sex>F</bv:sex>
+            <bv:weightKg>50</bv:weightKg>
+            <bv:heightCm>160</bv:heightCm>
+            <bv:age>33</bv:age>
+            <bv:medications>
+               <bv:medication>
+                  <bv:drugName>keppra</bv:drugName>
+                  <bv:dailyDosage>500 mg</bv:dailyDosage>
+                  <bv:startDate>2019-02-15</bv:startDate>
+               </bv:medication>
+            </bv:medications>
+            <bv:referentPhysicians>
+               <bv:referentPhysician refphysicianId="phy002" speciality="general practitioner"/>
+               <bv:referentPhysician refphysicianId="phy007" speciality="neurologue / brain surgeon"/>
+            </bv:referentPhysicians>
+         </bv:medicalInformation>
+         <bv:medicalHistory>
+            <bv:medicalActs>
+               <bv:consultation date="2019-01-01" refMedSerId="phy009">
+                  <bv:consultationResult>Patient present multiple signs of epilepsie</bv:consultationResult>
+                  <bv:prescription>consultation with a neurologist</bv:prescription>
+               </bv:consultation>
+               <bv:consultation date="2019-01-05" refMedSerId="phy007">
+                  <bv:consultationResult>Patient present a kyst in the right part of the brain</bv:consultationResult>
+                  <bv:prescription>surgery to remove the kyst, 500mg/day of keppra for 6 month following the surgery </bv:prescription>
+               </bv:consultation>
+               <bv:surgery date="2019-01-12" refMedSerId="phy007">
+                  <bv:generalComments>operation succefull with no postsurgery complications</bv:generalComments>
+                  <bv:interventionDescription>Removal of a kyst in the right hemisphère of the brain</bv:interventionDescription>
+               </bv:surgery>
+               <bv:hospitalisation date="2019-01-12" refMedSerId="hosp002">
+                  <bv:reason>brain surgery</bv:reason>
+                  <bv:lengthInDays>5</bv:lengthInDays>
+               </bv:hospitalisation>
+            </bv:medicalActs>
+            <bv:infections>
+               <bv:infection pathologie="Flu" date="2015-12-13"/>
+            </bv:infections>
+            <bv:vaccinationStatutes>
+               <bv:vaccin date="2006-09-18">
+                  <bv:pathologie>polio</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2001-06-07">
+                  <bv:pathologie>hepatite A</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2013-06-07">
+                  <bv:pathologie>polio</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2021-06-14">
+                  <bv:pathologie>bigvir84</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+            </bv:vaccinationStatutes>
+         </bv:medicalHistory>
+      </bv:citizen>
+      <bv:citizen citizenId="cit017">
+         <bv:medicalInformation>
+            <bv:sex>M</bv:sex>
+            <bv:weightKg>73</bv:weightKg>
+            <bv:heightCm>183</bv:heightCm>
+            <bv:age>25</bv:age>
+            <bv:referentPhysicians>
+               <bv:referentPhysician refphysicianId="phy001" speciality="general practitioner"/>
+            </bv:referentPhysicians>
+         </bv:medicalInformation>
+         <bv:medicalHistory>
+            <bv:medicalActs>
+               <bv:consultation date="2021-06-07" refMedSerId="phy001">
+                  <bv:consultationResult>Patient present bigvir84 symptomas</bv:consultationResult>
+                  <bv:prescription>bigvir84 medical test</bv:prescription>
+               </bv:consultation>
+               <bv:laboratoryTest date="2021-06-08" refMedSerId="lab003">
+                  <bv:pathologieTested>bigvir84</bv:pathologieTested>
+                  <bv:testResult>1</bv:testResult>
+                  <bv:resultDetails>Patient positive to bigvir84 with viral load of 0.6</bv:resultDetails>
+               </bv:laboratoryTest>
+            </bv:medicalActs>
+            <bv:infections>
+               <bv:infection pathologie="malaria" date="2012-07-14"/>
+            </bv:infections>
+            <bv:vaccinationStatutes>
+               <bv:vaccin date="2006-09-18">
+                  <bv:pathologie>thetanos</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2002-06-07">
+                  <bv:pathologie>hepatite A</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+            </bv:vaccinationStatutes>
+         </bv:medicalHistory>
+      </bv:citizen>
+      <bv:citizen citizenId="cit018">
+         <bv:medicalInformation>
+            <bv:sex>F</bv:sex>
+            <bv:weightKg>90</bv:weightKg>
+            <bv:heightCm>162</bv:heightCm>
+            <bv:age>38</bv:age>
+            <bv:medications>
+               <bv:medication>
+                  <bv:drugName>prozac</bv:drugName>
+                  <bv:dailyDosage>35 mg</bv:dailyDosage>
+                  <bv:startDate>2019-03-15</bv:startDate>
+               </bv:medication>
+            </bv:medications>
+            <bv:referentPhysicians>
+               <bv:referentPhysician refphysicianId="phy001" speciality="general practitioner"/>
+               <bv:referentPhysician refphysicianId="phy009" speciality="psychiatrist"/>
+            </bv:referentPhysicians>
+         </bv:medicalInformation>
+         <bv:medicalHistory>
+            <bv:medicalActs>
+               <bv:consultation date="2019-02-15" refMedSerId="phy009">
+                  <bv:consultationResult>Patient is depressive</bv:consultationResult>
+                  <bv:prescription>prozac treatment, 35 mg a day during 6 mont</bv:prescription>
+               </bv:consultation>
+               <bv:consultation date="2021-06-08" refMedSerId="phy002">
+                  <bv:consultationResult>Patient present bigvir84 symptomas</bv:consultationResult>
+                  <bv:prescription>bigvir84 medical test</bv:prescription>
+               </bv:consultation>
+               <bv:laboratoryTest date="2021-06-10" refMedSerId="lab003">
+                  <bv:pathologieTested>bigvir84</bv:pathologieTested>
+                  <bv:testResult>0</bv:testResult>
+               </bv:laboratoryTest>
+               <bv:hospitalisation date="2019-10-12" refMedSerId="hosp003">
+                  <bv:reason>Hepatite C</bv:reason>
+                  <bv:lengthInDays>3</bv:lengthInDays>
+               </bv:hospitalisation>
+            </bv:medicalActs>
+            <bv:infections>
+               <bv:infection pathologie="Flu" date="2019-12-14"/>
+               <bv:infection pathologie="malaria" date="2014-01-22"/>
+            </bv:infections>
+            <bv:vaccinationStatutes>
+               <bv:vaccin date="2006-09-18">
+                  <bv:pathologie>thetanos</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2001-06-07">
+                  <bv:pathologie>hepatite A</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2013-06-07">
+                  <bv:pathologie>polio</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+            </bv:vaccinationStatutes>
+         </bv:medicalHistory>
+      </bv:citizen>
+      <bv:citizen citizenId="cit019">
+         <bv:medicalInformation>
+            <bv:sex>M</bv:sex>
+            <bv:weightKg>80</bv:weightKg>
+            <bv:heightCm>185</bv:heightCm>
+            <bv:age>48</bv:age>
+            <bv:referentPhysicians>
+               <bv:referentPhysician refphysicianId="phy002" speciality="general practitioner"/>
+            </bv:referentPhysicians>
+         </bv:medicalInformation>
+         <bv:medicalHistory>
+            <bv:medicalActs>
+               <bv:consultation date="2015-06-03" refMedSerId="phy003">
+                  <bv:consultationResult>Patient has gastroenteritis</bv:consultationResult>
+                  <bv:prescription>1 bag of smecta 2 times a days during 4 days</bv:prescription>
+               </bv:consultation>
+               <bv:consultation date="2021-06-06" refMedSerId="phy005">
+                  <bv:consultationResult>Patient presents bigvir84 symptomas</bv:consultationResult>
+                  <bv:prescription>bigvir84 medical test</bv:prescription>
+               </bv:consultation>
+               <bv:laboratoryTest date="2021-06-07" refMedSerId="lab002">
+                  <bv:pathologieTested>bigvir84</bv:pathologieTested>
+                  <bv:testResult>0</bv:testResult>
+               </bv:laboratoryTest>
+            </bv:medicalActs>
+            <bv:infections>
+               <bv:infection pathologie="Yellow Fever" date="2017-03-14"/>
+               <bv:infection pathologie="Dengue" date="2019-01-22"/>
+            </bv:infections>
+            <bv:vaccinationStatutes>
+               <bv:vaccin date="2006-09-18">
+                  <bv:pathologie>thetanos</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2002-06-07">
+                  <bv:pathologie>hepatite C</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2021-06-01">
+                  <bv:pathologie>bigvir84</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+            </bv:vaccinationStatutes>
+         </bv:medicalHistory>
+      </bv:citizen>
+      <bv:citizen citizenId="cit020">
+         <bv:medicalInformation>
+            <bv:sex>F</bv:sex>
+            <bv:weightKg>85</bv:weightKg>
+            <bv:heightCm>155</bv:heightCm>
+            <bv:age>51</bv:age>
+            <bv:referentPhysicians>
+               <bv:referentPhysician refphysicianId="phy003" speciality="general practitioner"/>
+            </bv:referentPhysicians>
+         </bv:medicalInformation>
+         <bv:medicalHistory>
+            <bv:medicalActs>
+               <bv:consultation date="2021-06-04" refMedSerId="phy001">
+                  <bv:consultationResult>Patient present bigvir84 symptomas</bv:consultationResult>
+                  <bv:prescription>bigvir84 medical test</bv:prescription>
+               </bv:consultation>
+               <bv:laboratoryTest date="2015-03-04" refMedSerId="lab003">
+                  <bv:pathologieTested>HIV</bv:pathologieTested>
+                  <bv:testResult>0</bv:testResult>
+               </bv:laboratoryTest>
+               <bv:laboratoryTest date="2021-06-04" refMedSerId="lab003">
+                  <bv:pathologieTested>bigvir84</bv:pathologieTested>
+                  <bv:testResult>0</bv:testResult>
+               </bv:laboratoryTest>
+            </bv:medicalActs>
+            <bv:infections>
+               <bv:infection pathologie="Flu" date="2015-12-13"/>
+            </bv:infections>
+            <bv:vaccinationStatutes>
+               <bv:vaccin date="2006-09-18">
+                  <bv:pathologie>thetanos</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2001-06-07">
+                  <bv:pathologie>hepatite A</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+               <bv:vaccin date="2013-06-07">
+                  <bv:pathologie>polio</bv:pathologie>
+                  <bv:upToDate>1</bv:upToDate>
+               </bv:vaccin>
+            </bv:vaccinationStatutes>
+         </bv:medicalHistory>
+      </bv:citizen>
+   </bv:citizensUnder60>
+</bv:infoForVaccinus>

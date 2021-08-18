@@ -1,0 +1,1855 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<bv:BigVir2084_database xmlns:bv="http://finalassignment.org/XMLbigvir84Schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://finalassignment.org/XMLbigvir84Schema XMLSchemabigvir84.xsd">
+	<bv:citizens>
+		<bv:citizen idCitizen="cit001">
+			<bv:personalInformation>
+				<bv:name>Samuel</bv:name>
+				<bv:surname>Bricot</bv:surname>
+				<bv:dateOfBirth>1992-09-12</bv:dateOfBirth>
+				<bv:adress>45 rue de la chipo, Le Rheu</bv:adress>
+				<bv:zipcode>35650</bv:zipcode>
+				<bv:mobilePhoneNumber>0618599098</bv:mobilePhoneNumber>
+				<bv:mailAdress>samuel@laposte.net</bv:mailAdress>
+			</bv:personalInformation>
+			<bv:medicalInformation>
+				<bv:sex>M</bv:sex>
+				<bv:weightKg>67</bv:weightKg>
+				<bv:heightCm>187</bv:heightCm>
+				<bv:age>28</bv:age>
+				<bv:referentPhysicians>
+					<bv:referentPhysician refphysicianId="phy002" speciality="general practitioner"/>
+				</bv:referentPhysicians>
+				<bv:Allergies>Pollen Fruits Acariens</bv:Allergies>	
+			</bv:medicalInformation>
+			<bv:medicalHistory>
+				<bv:medicalActs>
+					<bv:consultation date="2021-06-08" refMedSerId="phy001">
+						<bv:consultationResult>Patient present bigvir84 symptomas</bv:consultationResult>
+						<bv:prescription>bigvir84 medical test</bv:prescription>
+					</bv:consultation>
+					<bv:laboratoryTest date="2021-06-09" refMedSerId="lab003">
+						<bv:pathologieTested>bigvir84</bv:pathologieTested>
+						<bv:testResult>1</bv:testResult>
+						<bv:resultDetails>Patient positive to bigvir84 with viral load of 0.6</bv:resultDetails>
+					</bv:laboratoryTest>
+				</bv:medicalActs>
+				<bv:infections>
+					<bv:infection pathologie="Tuberculoses" date="2012-07-14"/>		
+				</bv:infections>
+				<bv:vaccinationStatutes>
+					<bv:vaccin date="2006-09-18">
+						<bv:pathologie>thetanos</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2002-06-07">
+						<bv:pathologie>hepatite A</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>	
+				</bv:vaccinationStatutes>
+			</bv:medicalHistory>
+			<bv:socialInformation>
+				<bv:socialRelations>
+					<bv:contactWithCitId date="2021-06-10" citizenId="cit005">
+						<bv:locationAdress latitude="48.111598" longitude="-1.685317">32 rue du chapito Rennes 35000</bv:locationAdress>
+					</bv:contactWithCitId>
+					<bv:contactWithCitId date="2021-06-10" citizenId="cit003">
+					</bv:contactWithCitId>	
+				</bv:socialRelations>
+				<bv:socialHistory>
+					<bv:socialEvent date="2021-06-07">
+						<bv:placeOrEventName> Mall Bougaloo </bv:placeOrEventName>
+						<bv:placeId>pla002</bv:placeId>
+					</bv:socialEvent>
+					<bv:socialEvent date="2021-06-07">
+						<bv:placeOrEventName> Restaurant des 3 chips </bv:placeOrEventName>
+						<bv:placeId>pla001</bv:placeId>
+					</bv:socialEvent>
+					<bv:socialEvent date="2021-06-04">
+						<bv:placeOrEventName> Festival des vieilles charrues</bv:placeOrEventName>
+						<bv:eventId>evt001</bv:eventId>
+					</bv:socialEvent>
+				</bv:socialHistory>
+			</bv:socialInformation>
+		</bv:citizen>
+		
+		<bv:citizen idCitizen="cit002">
+			<bv:personalInformation>
+				<bv:name>Marcelus</bv:name>
+				<bv:surname>Conpito</bv:surname>
+				<bv:dateOfBirth>1954-02-12</bv:dateOfBirth>
+				<bv:adress>3 rue du pistolet, Tours </bv:adress>
+				<bv:zipcode>37000</bv:zipcode>
+				<bv:fixPhoneNumber>0299641387</bv:fixPhoneNumber>
+				<bv:mailAdress>marcelolerigolo@google.net</bv:mailAdress>
+			</bv:personalInformation>
+			<bv:medicalInformation>
+				<bv:sex>M</bv:sex>
+				<bv:weightKg>62</bv:weightKg>
+				<bv:heightCm>167</bv:heightCm>
+				<bv:age>67</bv:age>
+				<bv:referentPhysicians>
+					<bv:referentPhysician refphysicianId="phy001" speciality="general practitioner"/>
+					<bv:referentPhysician refphysicianId="phy005" speciality="cardiologist"/>
+				</bv:referentPhysicians>
+				<bv:Allergies>Peanut</bv:Allergies>
+			</bv:medicalInformation>
+			<bv:medicalHistory>
+				<bv:medicalActs>
+					<bv:consultation date="2021-06-03" refMedSerId="phy001">
+						<bv:consultationResult>Patient present bigvir84 symptomas</bv:consultationResult>
+						<bv:prescription>bigvir84 medical test</bv:prescription>
+					</bv:consultation>
+					<bv:laboratoryTest date="2015-03-04" refMedSerId="lab003">
+						<bv:pathologieTested>HIV</bv:pathologieTested>
+						<bv:testResult>0</bv:testResult>
+					</bv:laboratoryTest>
+					<bv:laboratoryTest date="2021-06-04" refMedSerId="lab003">
+						<bv:pathologieTested>bigvir84</bv:pathologieTested>
+						<bv:testResult>1</bv:testResult>
+						<bv:resultDetails>Patient positive to bigvir84 with viral load of 0.2</bv:resultDetails>
+					</bv:laboratoryTest>
+					<bv:surgery date="2012-06-15" refMedSerId="phy005">
+						<bv:interventionDescription>Hearth replacement surgery</bv:interventionDescription>
+					</bv:surgery>
+				</bv:medicalActs>
+				<bv:infections>
+					<bv:infection pathologie="malaria" date="2014-06-14"/>
+				</bv:infections>
+				<bv:immunizationStatus>
+					<bv:pathologie testDate="2015-06-19">
+						<bv:name>H1N1 flu</bv:name>
+						<bv:result>negatif</bv:result>
+					</bv:pathologie>
+					<bv:pathologie testDate="2021-04-15">
+						<bv:name>bigvir84</bv:name>
+						<bv:result>negatif</bv:result>
+					</bv:pathologie>
+				</bv:immunizationStatus>
+				<bv:vaccinationStatutes>
+					<bv:vaccin date="2006-09-18">
+						<bv:pathologie>thetanos</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2002-06-07">
+						<bv:pathologie>hepatite A</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+				</bv:vaccinationStatutes>
+			</bv:medicalHistory>
+			<bv:socialInformation>
+				<bv:socialRelations>
+					<bv:contactWithCitId date="2021-06-09" citizenId="cit004">
+						<bv:locationAdress latitude="48.111591" longitude="-1.685311">32 rue du champ jacquet Rennes 35000</bv:locationAdress>
+					</bv:contactWithCitId>
+					<bv:contactWithCitId date="2021-06-08" citizenId="cit002">
+					</bv:contactWithCitId>
+				</bv:socialRelations>
+				<bv:socialHistory>
+					<bv:socialEvent date="2021-06-02">
+						<bv:placeOrEventName> Musee des beaux arts </bv:placeOrEventName>
+						<bv:placeId>pla003</bv:placeId>
+					</bv:socialEvent>
+					<bv:socialEvent date="2021-06-07">
+						<bv:placeOrEventName> Cinema CGR </bv:placeOrEventName>
+						<bv:placeId>pla004</bv:placeId>
+					</bv:socialEvent>
+					<bv:socialEvent date="2021-06-09">
+						<bv:placeOrEventName> Rolland Garos </bv:placeOrEventName>
+						<bv:eventId>evt005</bv:eventId>
+					</bv:socialEvent>
+				</bv:socialHistory>
+			</bv:socialInformation>
+		</bv:citizen>
+		
+		<bv:citizen idCitizen="cit003">
+			<bv:personalInformation>
+				<bv:name>Josianne</bv:name>
+				<bv:surname>Garibaldi</bv:surname>
+				<bv:dateOfBirth>1948-01-12</bv:dateOfBirth>
+				<bv:adress>35 rue du pipo, Paris</bv:adress>
+				<bv:zipcode>75013</bv:zipcode>
+				<bv:fixPhoneNumber>0299641387</bv:fixPhoneNumber>
+				<bv:mailAdress>josijozee@gmail.net</bv:mailAdress>
+			</bv:personalInformation>
+			<bv:medicalInformation>
+				<bv:sex>F</bv:sex>
+				<bv:weightKg>52</bv:weightKg>
+				<bv:heightCm>163</bv:heightCm>
+				<bv:age>73</bv:age>
+				<bv:medications>
+					<bv:medication>
+						<bv:drugName>buronzan</bv:drugName>
+						<bv:dailyDosage>125 mg</bv:dailyDosage>
+						<bv:startDate>2019-05-01</bv:startDate>
+					</bv:medication>
+					<bv:medication>
+						<bv:drugName>maxipropulsator</bv:drugName>
+						<bv:dailyDosage>1300 mg</bv:dailyDosage>
+						<bv:startDate>2018-02-28</bv:startDate>
+					</bv:medication>
+				</bv:medications>
+				<bv:referentPhysicians>
+					<bv:referentPhysician refphysicianId="phy002" speciality="general practitioner"/>
+					<bv:referentPhysician refphysicianId="phy006" speciality="pulmonologist"/>
+				</bv:referentPhysicians>
+			</bv:medicalInformation>
+			<bv:medicalHistory>
+				<bv:medicalActs>
+					<bv:consultation date="2020-06-03" refMedSerId="phy002">
+						<bv:consultationResult>Patient has the flue</bv:consultationResult>
+						<bv:prescription>sleep/soup and ibuprofène</bv:prescription>
+					</bv:consultation>
+					<bv:laboratoryTest date="2016-03-04" refMedSerId="lab003">
+						<bv:pathologieTested>Syphilis</bv:pathologieTested>
+						<bv:testResult>0</bv:testResult>
+					</bv:laboratoryTest>
+					<bv:laboratoryTest date="2021-06-10" refMedSerId="lab002">
+						<bv:pathologieTested>bigvir84</bv:pathologieTested>
+						<bv:testResult>1</bv:testResult>
+						<bv:resultDetails>Patient positive to bigvir84 with viral load of 0.5</bv:resultDetails>
+					</bv:laboratoryTest>
+					<bv:surgery date="2012-06-15" refMedSerId="phy007">
+						<bv:interventionDescription>brain implant</bv:interventionDescription>
+					</bv:surgery>
+					<bv:hospitalisation date="2012-06-14" refMedSerId="hosp001">
+						<bv:reason>brain surgery</bv:reason>
+						<bv:lengthInDays>15</bv:lengthInDays>
+					</bv:hospitalisation>
+				</bv:medicalActs>
+				<bv:vaccinationStatutes>
+					<bv:vaccin date="2003-05-18">
+						<bv:pathologie>thetanos</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2001-06-07">
+						<bv:pathologie>hepatite A</bv:pathologie>
+						<bv:upToDate>0</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2021-05-07">
+						<bv:pathologie>bigvir84</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+				</bv:vaccinationStatutes>
+			</bv:medicalHistory>
+			<bv:socialInformation>
+				<bv:socialRelations>
+					<bv:contactWithCitId date="2021-06-09" citizenId="cit002">
+						<bv:locationAdress latitude="48.1135463" longitude="1.6855455">45 rue de la pompe, 75002, Paris, France</bv:locationAdress>
+					</bv:contactWithCitId>
+					<bv:contactWithCitId date="2021-06-08" citizenId="cit004"/>
+					<bv:contactWithCitId date="2021-06-08" citizenId="cit004"/>	
+				</bv:socialRelations>
+				<bv:socialHistory>
+					<bv:socialEvent date="2021-06-08">
+						<bv:placeOrEventName> Cathedral Saint-Pierre de Rennes </bv:placeOrEventName>
+						<bv:placeId>pla008</bv:placeId>
+					</bv:socialEvent>
+					<bv:socialEvent date="2021-06-09">
+						<bv:placeOrEventName> les tablées du Rheu </bv:placeOrEventName>
+						<bv:eventId>evt004</bv:eventId>
+					</bv:socialEvent>
+				</bv:socialHistory>
+			</bv:socialInformation>
+		</bv:citizen>
+		
+		<bv:citizen idCitizen="cit004">
+			<bv:personalInformation>
+				<bv:name>Corinne</bv:name>
+				<bv:surname>Saupiquet</bv:surname>
+				<bv:dateOfBirth>1991-09-13</bv:dateOfBirth>
+				<bv:adress>3 square Auguste Renoir, Paris</bv:adress>
+				<bv:zipcode>75013</bv:zipcode>
+				<bv:mobilePhoneNumber>0678899553</bv:mobilePhoneNumber>
+				<bv:mailAdress>cocolasaupique@laposte.net</bv:mailAdress>
+			</bv:personalInformation>
+			<bv:medicalInformation>
+				<bv:sex>F</bv:sex>
+				<bv:weightKg>85</bv:weightKg>
+				<bv:heightCm>165</bv:heightCm>
+				<bv:age>29</bv:age>
+				<bv:referentPhysicians>
+					<bv:referentPhysician refphysicianId="phy003" speciality="general practitioner"/>
+				</bv:referentPhysicians>
+				<bv:Allergies>Chocolat Pollen Peanut</bv:Allergies>
+			</bv:medicalInformation>
+			<bv:medicalHistory>
+				<bv:medicalActs>
+					<bv:consultation date="2020-06-03" refMedSerId="phy003">
+						<bv:consultationResult>Patient has gastroenteritis</bv:consultationResult>
+						<bv:prescription>1 bag of smecta 2 times a days during 4 days</bv:prescription>
+					</bv:consultation>
+					<bv:consultation date="2021-06-06" refMedSerId="phy005">
+						<bv:consultationResult>Patient presents bigvir84 symptomas</bv:consultationResult>
+						<bv:prescription>bigvir84 medical test</bv:prescription>
+					</bv:consultation>
+					<bv:laboratoryTest date="2015-03-04" refMedSerId="lab003">
+						<bv:pathologieTested>HIV</bv:pathologieTested>
+						<bv:testResult>0</bv:testResult>
+					</bv:laboratoryTest>
+					<bv:laboratoryTest date="2021-06-07" refMedSerId="lab002">
+						<bv:pathologieTested>bigvir84</bv:pathologieTested>
+						<bv:testResult>0</bv:testResult>
+					</bv:laboratoryTest>
+					<bv:hospitalisation date="2016-04-15" refMedSerId="hosp003">
+						<bv:reason>broken leg</bv:reason>
+						<bv:lengthInDays>1</bv:lengthInDays>
+					</bv:hospitalisation>
+				</bv:medicalActs>
+				<bv:infections>
+					<bv:infection pathologie="Yellow Fever" date="2017-03-14"/>
+					<bv:infection pathologie="Dengue" date="2019-01-22"/>
+				</bv:infections>
+				<bv:vaccinationStatutes>
+					<bv:vaccin date="2006-09-18">
+						<bv:pathologie>thetanos</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2002-06-07">
+						<bv:pathologie>hepatite C</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2021-06-12">
+						<bv:pathologie>bigvir84</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+				</bv:vaccinationStatutes>
+			</bv:medicalHistory>
+			<bv:socialInformation>
+				<bv:socialRelations/>
+				<bv:socialHistory>
+					<bv:socialEvent date="2021-06-02">
+						<bv:placeOrEventName> parly 2 </bv:placeOrEventName>
+						<bv:placeId>pla005</bv:placeId>
+					</bv:socialEvent>
+					<bv:socialEvent date="2021-06-09">
+						<bv:placeOrEventName> Rolling Stones concert </bv:placeOrEventName>
+						<bv:eventId>evt003</bv:eventId>
+					</bv:socialEvent>
+					<bv:socialEvent date="2021-06-10">
+						<bv:placeOrEventName> restaurant des 3 chips </bv:placeOrEventName>
+						<bv:placeId>pla001</bv:placeId>
+					</bv:socialEvent>
+				</bv:socialHistory>
+			</bv:socialInformation>
+		</bv:citizen>
+
+		<bv:citizen idCitizen="cit005">
+			<bv:personalInformation>
+				<bv:name>Jean</bv:name>
+				<bv:surname>Bonneau</bv:surname>
+				<bv:dateOfBirth>1950-04-15</bv:dateOfBirth>
+				<bv:adress>35 rue du pilai, Paris</bv:adress>
+				<bv:zipcode>75012</bv:zipcode>
+				<bv:fixPhoneNumber>0299641387</bv:fixPhoneNumber>
+				<bv:mailAdress>jeanbonneau@google.net</bv:mailAdress>
+			</bv:personalInformation>
+			<bv:medicalInformation>
+				<bv:sex>M</bv:sex>
+				<bv:weightKg>120</bv:weightKg>
+				<bv:heightCm>170</bv:heightCm>
+				<bv:age>67</bv:age>
+				<bv:medications>
+					<bv:medication>
+						<bv:drugName>esoméprazole</bv:drugName>
+						<bv:dailyDosage>450 mg</bv:dailyDosage>
+						<bv:startDate>2020-03-15</bv:startDate>
+					</bv:medication>
+					<bv:medication>
+						<bv:drugName>bisoprolol</bv:drugName>
+						<bv:dailyDosage>24 mg</bv:dailyDosage>
+						<bv:startDate>2018-02-28</bv:startDate>
+					</bv:medication>
+					<bv:medication>
+						<bv:drugName>Pantoprazole </bv:drugName>
+						<bv:dailyDosage>590 mg</bv:dailyDosage>
+						<bv:startDate>2020-09-28</bv:startDate>
+					</bv:medication>
+				</bv:medications>
+				<bv:referentPhysicians>
+					<bv:referentPhysician refphysicianId="phy001" speciality="general practitioner"/>
+				</bv:referentPhysicians>
+			</bv:medicalInformation>
+			<bv:medicalHistory>
+				<bv:medicalActs>
+					<bv:consultation date="2021-06-09" refMedSerId="phy005">
+						<bv:consultationResult>Patient present bigvir84 symptomas</bv:consultationResult>
+						<bv:prescription>bigvir84 medical test</bv:prescription>
+					</bv:consultation>
+					<bv:laboratoryTest date="2015-03-04" refMedSerId="lab003">
+						<bv:pathologieTested>Anemia</bv:pathologieTested>
+						<bv:testResult>1</bv:testResult>
+						<bv:resultDetails>red cell rate under 25000/l</bv:resultDetails>
+					</bv:laboratoryTest>
+					<bv:surgery date="2016-01-15" refMedSerId="phy008">
+						<bv:interventionDescription>hip replacement surgery</bv:interventionDescription>
+					</bv:surgery>
+					<bv:hospitalisation date="2018-07-12" refMedSerId="hosp003">
+						<bv:reason>Heart attack</bv:reason>
+						<bv:lengthInDays>8</bv:lengthInDays>
+					</bv:hospitalisation>
+				</bv:medicalActs>
+				<bv:infections>
+					<bv:infection pathologie="Flu" date="2018-12-14"/>
+					<bv:infection pathologie="H1N1 Flu" date="2019-01-22"/>
+				</bv:infections>
+				<bv:vaccinationStatutes>
+					<bv:vaccin date="2006-09-18">
+						<bv:pathologie>thetanos</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2002-06-07">
+						<bv:pathologie>hepatite A</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2002-06-07">
+						<bv:pathologie>polio</bv:pathologie>
+						<bv:upToDate>0</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2021-06-02">
+						<bv:pathologie>bigvir84</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+				</bv:vaccinationStatutes>
+			</bv:medicalHistory>
+			<bv:socialInformation>
+				<bv:socialRelations>
+					<bv:contactWithCitId date="2021-06-02" citizenId="cit006"/>
+					<bv:contactWithCitId date="2021-06-02" citizenId="cit007"/>
+				</bv:socialRelations>
+				<bv:socialHistory>
+					<bv:socialEvent date="2021-06-02">
+						<bv:placeOrEventName> la fontaine au perles </bv:placeOrEventName>
+						<bv:placeId>pla009</bv:placeId>
+					</bv:socialEvent>
+					<bv:socialEvent date="2021-06-09">
+						<bv:placeOrEventName> gare du nord</bv:placeOrEventName>
+						<bv:placeId>pla006</bv:placeId>
+					</bv:socialEvent>
+				</bv:socialHistory>
+			</bv:socialInformation>
+		</bv:citizen>
+
+		<bv:citizen idCitizen="cit006">
+			<bv:personalInformation>
+				<bv:name>Mireille</bv:name>
+				<bv:surname>Mathieu</bv:surname>
+				<bv:dateOfBirth>1980-03-15</bv:dateOfBirth>
+				<bv:adress>32 rue du temple, Rennes</bv:adress>
+				<bv:zipcode>35000</bv:zipcode>
+				<bv:mobilePhoneNumber>0617288639</bv:mobilePhoneNumber>
+				<bv:mailAdress>nmatmutdu35@hotmail.com</bv:mailAdress>
+			</bv:personalInformation>
+			<bv:medicalInformation>
+				<bv:sex>F</bv:sex>
+				<bv:weightKg>55</bv:weightKg>
+				<bv:heightCm>175</bv:heightCm>
+				<bv:age>41</bv:age>
+				<bv:medications>
+					<bv:medication>
+						<bv:drugName>prozac</bv:drugName>
+						<bv:dailyDosage>35 mg</bv:dailyDosage>
+						<bv:startDate>2020-03-15</bv:startDate>
+					</bv:medication>
+				</bv:medications>
+				<bv:referentPhysicians>
+					<bv:referentPhysician refphysicianId="phy002" speciality="general practitioner"/>
+					<bv:referentPhysician refphysicianId="phy009" speciality="psychiatrist"/>
+				</bv:referentPhysicians>
+			</bv:medicalInformation>
+			<bv:medicalHistory>
+				<bv:medicalActs>
+					<bv:consultation date="2020-02-15" refMedSerId="phy009">
+						<bv:consultationResult>Patient is depressive</bv:consultationResult>
+						<bv:prescription>prozac treatment, 35 mg a day during 6 mont</bv:prescription>
+					</bv:consultation>
+					<bv:consultation date="2021-06-08" refMedSerId="phy002">
+						<bv:consultationResult>Patient present bigvir84 symptomas</bv:consultationResult>
+						<bv:prescription>bigvir84 medical test</bv:prescription>
+					</bv:consultation>
+					<bv:laboratoryTest date="2021-06-10" refMedSerId="lab003">
+						<bv:pathologieTested>bigvir84</bv:pathologieTested>
+						<bv:testResult>1</bv:testResult>
+						<bv:resultDetails>positive to bigvir84 with viral load of 0,9</bv:resultDetails>
+					</bv:laboratoryTest>
+					<bv:hospitalisation date="2019-10-12" refMedSerId="hosp003">
+						<bv:reason>Hepatite C</bv:reason>
+						<bv:lengthInDays>3</bv:lengthInDays>
+					</bv:hospitalisation>
+				</bv:medicalActs>
+				<bv:infections>
+					<bv:infection pathologie="Flu" date="2019-12-14"/>
+					<bv:infection pathologie="malaria" date="2014-01-22"/>
+				</bv:infections>
+				<bv:vaccinationStatutes>
+					<bv:vaccin date="2006-09-18">
+						<bv:pathologie>thetanos</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2001-06-07">
+						<bv:pathologie>hepatite A</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2013-06-07">
+						<bv:pathologie>polio</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+				</bv:vaccinationStatutes>
+			</bv:medicalHistory>
+			<bv:socialInformation>
+				<bv:socialRelations>
+					<bv:contactWithCitId date="2021-06-02" citizenId="cit005"/>
+					<bv:contactWithCitId date="2021-06-02" citizenId="cit007"/>
+				</bv:socialRelations>
+				<bv:socialHistory>
+					<bv:socialEvent date="2021-06-02">
+						<bv:placeOrEventName> la fontaine au perles </bv:placeOrEventName>
+						<bv:placeId>pla009</bv:placeId>
+					</bv:socialEvent>
+					<bv:socialEvent date="2021-06-09">
+						<bv:placeOrEventName> match Paris/Marseille</bv:placeOrEventName>
+						<bv:eventId>evt006</bv:eventId>
+					</bv:socialEvent>
+					<bv:socialEvent date="2021-06-08">
+						<bv:placeOrEventName> Rolland Garros</bv:placeOrEventName>
+						<bv:eventId>evt005</bv:eventId>
+					</bv:socialEvent>
+				</bv:socialHistory>
+			</bv:socialInformation>
+		</bv:citizen>
+		
+		<bv:citizen idCitizen="cit007">
+			<bv:personalInformation>
+				<bv:name>Claude</bv:name>
+				<bv:surname>Nougaro</bv:surname>
+				<bv:dateOfBirth>1960-03-15</bv:dateOfBirth>
+				<bv:adress>14 rue des allouettes, Le Rheu</bv:adress>
+				<bv:zipcode>35650</bv:zipcode>
+				<bv:mobilePhoneNumber>0617288643</bv:mobilePhoneNumber>
+				<bv:mailAdress>claudio@hotmail.com</bv:mailAdress>
+			</bv:personalInformation>
+			<bv:medicalInformation>
+				<bv:sex>M</bv:sex>
+				<bv:weightKg>85</bv:weightKg>
+				<bv:heightCm>145</bv:heightCm>
+				<bv:age>61</bv:age>
+				<bv:medications>
+					<bv:medication>
+						<bv:drugName>prozac</bv:drugName>
+						<bv:dailyDosage>35 mg</bv:dailyDosage>
+						<bv:startDate>2020-03-15</bv:startDate>
+					</bv:medication>
+				</bv:medications>
+				<bv:referentPhysicians>
+					<bv:referentPhysician refphysicianId="phy002" speciality="general practitioner"/>
+					<bv:referentPhysician refphysicianId="phy009" speciality="psychiatrist"/>
+				</bv:referentPhysicians>
+			</bv:medicalInformation>
+			<bv:medicalHistory>
+				<bv:medicalActs>
+					<bv:consultation date="2020-02-15" refMedSerId="phy009">
+						<bv:consultationResult>Patient is depressive</bv:consultationResult>
+						<bv:prescription>prozac treatment, 35 mg a day during 6 mont</bv:prescription>
+					</bv:consultation>
+					<bv:consultation date="2021-06-08" refMedSerId="phy002">
+						<bv:consultationResult>Patient present bigvir84 symptomas</bv:consultationResult>
+						<bv:prescription>bigvir84 medical test</bv:prescription>
+					</bv:consultation>
+					<bv:laboratoryTest date="2021-06-10" refMedSerId="lab003">
+						<bv:pathologieTested>bigvir84</bv:pathologieTested>
+						<bv:testResult>0</bv:testResult>
+					</bv:laboratoryTest>
+					<bv:hospitalisation date="2019-10-12" refMedSerId="hosp003">
+						<bv:reason>Hepatite C</bv:reason>
+						<bv:lengthInDays>3</bv:lengthInDays>
+					</bv:hospitalisation>
+				</bv:medicalActs>
+				<bv:infections>
+					<bv:infection pathologie="Flu" date="2014-12-13"/>
+					<bv:infection pathologie="malaria" date="2014-01-22"/>
+				</bv:infections>
+				<bv:vaccinationStatutes>
+					<bv:vaccin date="2006-09-18">
+						<bv:pathologie>thetanos</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2001-06-07">
+						<bv:pathologie>hepatite A</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2013-06-07">
+						<bv:pathologie>polio</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2021-06-07">
+						<bv:pathologie>bigvir84</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+				</bv:vaccinationStatutes>
+			</bv:medicalHistory>
+			<bv:socialInformation>
+				<bv:socialRelations>
+					<bv:contactWithCitId date="2021-06-02" citizenId="cit005"/>
+					<bv:contactWithCitId date="2021-06-02" citizenId="cit006"/>
+				</bv:socialRelations>
+				<bv:socialHistory>
+					<bv:socialEvent date="2021-06-02">
+						<bv:placeOrEventName> la fontaine au perles </bv:placeOrEventName>
+						<bv:placeId>pla009</bv:placeId>
+					</bv:socialEvent>
+					<bv:socialEvent date="2021-06-09">
+						<bv:placeOrEventName> match Paris/Marseille</bv:placeOrEventName>
+						<bv:eventId>evt006</bv:eventId>
+					</bv:socialEvent>
+					<bv:socialEvent date="2021-06-08">
+						<bv:placeOrEventName> Rolland Garros</bv:placeOrEventName>
+						<bv:eventId>evt005</bv:eventId>
+					</bv:socialEvent>
+				</bv:socialHistory>
+			</bv:socialInformation>
+		</bv:citizen>
+	
+		<bv:citizen idCitizen="cit008">
+			<bv:personalInformation>
+				<bv:name>Germaine</bv:name>
+				<bv:surname>Lemoulot</bv:surname>
+				<bv:dateOfBirth>1963-02-05</bv:dateOfBirth>
+				<bv:adress>3 rue du chapitre, Paris</bv:adress>
+				<bv:zipcode>75016</bv:zipcode>
+				<bv:fixPhoneNumber>0299873480</bv:fixPhoneNumber>
+				<bv:mailAdress>germaino@hotmail.com</bv:mailAdress>
+			</bv:personalInformation>
+			<bv:medicalInformation>
+				<bv:sex>F</bv:sex>
+				<bv:weightKg>50</bv:weightKg>
+				<bv:heightCm>155</bv:heightCm>
+				<bv:age>58</bv:age>
+				<bv:medications>
+					<bv:medication>
+						<bv:drugName>keppra</bv:drugName>
+						<bv:dailyDosage>500 mg</bv:dailyDosage>
+						<bv:startDate>2019-02-15</bv:startDate>
+					</bv:medication>
+				</bv:medications>
+				<bv:referentPhysicians>
+					<bv:referentPhysician refphysicianId="phy002" speciality="general practitioner"/>
+					<bv:referentPhysician refphysicianId="phy007" speciality="neurologue / brain surgeon"/>
+				</bv:referentPhysicians>
+			</bv:medicalInformation>
+			<bv:medicalHistory>
+				<bv:medicalActs>
+					<bv:consultation date="2019-01-01" refMedSerId="phy009">
+						<bv:consultationResult>Patient present multiple signs of epilepsie</bv:consultationResult>
+						<bv:prescription>consultation with a neurologist</bv:prescription>
+					</bv:consultation>
+					<bv:consultation date="2019-01-05" refMedSerId="phy007">
+						<bv:consultationResult>Patient present a kyst in the right part of the brain</bv:consultationResult>
+						<bv:prescription>surgery to remove the kyst, 500mg/day of keppra for 6 month following the surgery </bv:prescription>
+					</bv:consultation>
+					<bv:surgery date="2019-01-12" refMedSerId="phy007">
+						<bv:generalComments>operation succefull with no postsurgery complications</bv:generalComments>
+						<bv:interventionDescription>Removal of a kyst in the right hemisphère of the brain</bv:interventionDescription>
+					</bv:surgery>
+					<bv:hospitalisation date="2019-01-12" refMedSerId="hosp002">
+						<bv:reason>brain surgery</bv:reason>
+						<bv:lengthInDays>5</bv:lengthInDays>
+					</bv:hospitalisation>
+				</bv:medicalActs>
+				<bv:infections>
+					<bv:infection pathologie="Flu" date="2015-12-13"/>
+				</bv:infections>
+				<bv:vaccinationStatutes>
+					<bv:vaccin date="2006-09-18">
+						<bv:pathologie>thetanos</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2001-06-07">
+						<bv:pathologie>hepatite A</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2013-06-07">
+						<bv:pathologie>polio</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2021-06-13">
+						<bv:pathologie>bigvir84</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+				</bv:vaccinationStatutes>
+			</bv:medicalHistory>
+			<bv:socialInformation>
+				<bv:socialHistory>
+					<bv:socialEvent date="2021-06-10">
+						<bv:placeOrEventName>Les tablées du rheu</bv:placeOrEventName>
+						<bv:eventId>evt004</bv:eventId>
+					</bv:socialEvent>
+				</bv:socialHistory>
+			</bv:socialInformation>
+		</bv:citizen>
+	
+		<bv:citizen idCitizen="cit009">
+			<bv:personalInformation>
+				<bv:name>Marcellus</bv:name>
+				<bv:surname>Wallas</bv:surname>
+				<bv:dateOfBirth>1952-08-09</bv:dateOfBirth>
+				<bv:adress>35 rue de la chaudière, Paris</bv:adress>
+				<bv:zipcode>75001</bv:zipcode>
+				<bv:mobilePhoneNumber>0617288634</bv:mobilePhoneNumber>
+				<bv:mailAdress>marcelluselano@hotmail.com</bv:mailAdress>
+			</bv:personalInformation>
+			<bv:medicalInformation>
+				<bv:sex>M</bv:sex>
+				<bv:weightKg>70</bv:weightKg>
+				<bv:heightCm>183</bv:heightCm>
+				<bv:age>68</bv:age>
+				<bv:medications>
+					<bv:medication>
+						<bv:drugName>esoméprazole</bv:drugName>
+						<bv:dailyDosage>250 mg</bv:dailyDosage>
+						<bv:startDate>2019-04-12</bv:startDate>
+					</bv:medication>
+					<bv:medication>
+						<bv:drugName>bisoprolol</bv:drugName>
+						<bv:dailyDosage>85 mg</bv:dailyDosage>
+						<bv:startDate>2019-03-28</bv:startDate>
+					</bv:medication>
+					<bv:medication>
+						<bv:drugName>Pantoprazole </bv:drugName>
+						<bv:dailyDosage>350 mg</bv:dailyDosage>
+						<bv:startDate>2020-01-22</bv:startDate>
+					</bv:medication>
+					<bv:medication>
+						<bv:drugName>Viagra</bv:drugName>
+						<bv:dailyDosage>350 mg</bv:dailyDosage>
+						<bv:startDate>2020-01-22</bv:startDate>
+					</bv:medication>
+				</bv:medications>
+				<bv:referentPhysicians>
+					<bv:referentPhysician refphysicianId="phy003" speciality="general practitioner"/>
+				</bv:referentPhysicians>
+			</bv:medicalInformation>
+			<bv:medicalHistory>
+				<bv:medicalActs>
+					<bv:consultation date="2010-06-08" refMedSerId="phy002">
+						<bv:consultationResult>Patient present flu symptomas</bv:consultationResult>
+						<bv:prescription>sleep and soup / 50mg of aspirine twice a day for 5 days</bv:prescription>
+					</bv:consultation>
+					<bv:hospitalisation date="2020-10-12" refMedSerId="hosp002">
+						<bv:reason>broken leg</bv:reason>
+						<bv:lengthInDays>1</bv:lengthInDays>
+					</bv:hospitalisation>
+				</bv:medicalActs>
+				<bv:infections>
+					<bv:infection pathologie="Flu" date="2019-12-14"/>
+					<bv:infection pathologie="malaria" date="2014-01-22"/>
+				</bv:infections>
+				<bv:immunizationStatus>
+					<bv:pathologie testDate="2017-06-19">
+						<bv:name>H1N1 flu</bv:name>
+						<bv:result>negatif</bv:result>
+					</bv:pathologie>
+					<bv:pathologie testDate="2021-06-15">
+						<bv:name>bigvir84</bv:name>
+						<bv:result>positif</bv:result>
+					</bv:pathologie>
+				</bv:immunizationStatus>
+				<bv:vaccinationStatutes>
+					<bv:vaccin date="2006-09-18">
+						<bv:pathologie>Thetanos</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2001-06-07">
+						<bv:pathologie>Hepatite A</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2013-06-07">
+						<bv:pathologie>Polio</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2021-06-07">
+						<bv:pathologie>bigvir84</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+				</bv:vaccinationStatutes>
+			</bv:medicalHistory>
+			<bv:socialInformation>
+				<bv:socialRelations>
+					<bv:contactWithCitId date="2021-06-02" citizenId="cit010"/>
+					<bv:contactWithCitId date="2021-06-07" citizenId="cit011"/>
+				</bv:socialRelations>
+			</bv:socialInformation>
+		</bv:citizen>
+	
+		<bv:citizen idCitizen="cit010">
+			<bv:personalInformation>
+				<bv:name>Pablo</bv:name>
+				<bv:surname>Piquassiette</bv:surname>
+				<bv:dateOfBirth>1975-09-13</bv:dateOfBirth>
+				<bv:adress>3 square Gilbert Boulard, Paris</bv:adress>
+				<bv:zipcode>75011</bv:zipcode>
+				<bv:mobilePhoneNumber>0678899553</bv:mobilePhoneNumber>
+				<bv:mailAdress>pablo@laposte.net</bv:mailAdress>
+			</bv:personalInformation>
+			<bv:medicalInformation>
+				<bv:sex>M</bv:sex>
+				<bv:weightKg>120</bv:weightKg>
+				<bv:heightCm>185</bv:heightCm>
+				<bv:age>45</bv:age>
+				<bv:referentPhysicians>
+					<bv:referentPhysician refphysicianId="phy004" speciality="general practitioner"/>
+				</bv:referentPhysicians>
+			</bv:medicalInformation>
+			<bv:medicalHistory>
+				<bv:medicalActs>
+					<bv:consultation date="2014-06-03" refMedSerId="phy004">
+						<bv:consultationResult>Patient has gastroenteritis</bv:consultationResult>
+						<bv:prescription>1 bag of smecta 2 times a days during 4 days</bv:prescription>
+					</bv:consultation>
+					<bv:consultation date="2021-06-06" refMedSerId="phy005">
+						<bv:consultationResult>Patient presents bigvir84 symptomas</bv:consultationResult>
+						<bv:prescription>bigvir84 medical test</bv:prescription>
+					</bv:consultation>
+					<bv:laboratoryTest date="2015-03-04" refMedSerId="lab003">
+						<bv:pathologieTested>HIV</bv:pathologieTested>
+						<bv:testResult>0</bv:testResult>
+					</bv:laboratoryTest>
+					<bv:laboratoryTest date="2021-06-07" refMedSerId="lab002">
+						<bv:pathologieTested>bigvir84</bv:pathologieTested>
+						<bv:testResult>1</bv:testResult>
+						<bv:resultDetails>positif to bigvir84 with viral load of 0,5</bv:resultDetails>
+					</bv:laboratoryTest>
+				</bv:medicalActs>
+				<bv:infections>
+					<bv:infection pathologie="Yellow Fever" date="2017-03-14"/>
+					<bv:infection pathologie="Dengue" date="2019-01-22"/>
+				</bv:infections>
+				<bv:vaccinationStatutes>
+					<bv:vaccin date="2006-09-18">
+						<bv:pathologie>thetanos</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2002-06-07">
+						<bv:pathologie>hepatite C</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+				</bv:vaccinationStatutes>
+			</bv:medicalHistory>
+			<bv:socialInformation>
+				<bv:socialRelations>
+					<bv:contactWithCitId date="2021-06-02" citizenId="cit009"/>
+				</bv:socialRelations>
+				<bv:socialHistory>
+					<bv:socialEvent date="2021-06-03">
+						<bv:placeOrEventName> parly 2 </bv:placeOrEventName>
+						<bv:placeId>pla005</bv:placeId>
+					</bv:socialEvent>
+					<bv:socialEvent date="2021-06-09">
+						<bv:placeOrEventName> Rolling Stones concert </bv:placeOrEventName>
+						<bv:eventId>evt003</bv:eventId>
+					</bv:socialEvent>
+				</bv:socialHistory>
+			</bv:socialInformation>
+		</bv:citizen>
+	
+		<bv:citizen idCitizen="cit011">
+			<bv:personalInformation>
+				<bv:name>Maxime</bv:name>
+				<bv:surname>Leforestier</bv:surname>
+				<bv:dateOfBirth>1946-12-12</bv:dateOfBirth>
+				<bv:adress>35 rue du pipo</bv:adress>
+				<bv:zipcode>75013</bv:zipcode>
+				<bv:fixPhoneNumber>0299641356</bv:fixPhoneNumber>
+				<bv:mailAdress>maximusomnibus@gmail.net</bv:mailAdress>
+			</bv:personalInformation>
+			<bv:medicalInformation>
+				<bv:sex>M</bv:sex>
+				<bv:weightKg>90</bv:weightKg>
+				<bv:heightCm>163</bv:heightCm>
+				<bv:age>74</bv:age>
+				<bv:medications>
+					<bv:medication>
+						<bv:drugName>buronzan</bv:drugName>
+						<bv:dailyDosage>125 mg</bv:dailyDosage>
+						<bv:startDate>2019-05-01</bv:startDate>
+					</bv:medication>
+					<bv:medication>
+						<bv:drugName>maxipropulsator</bv:drugName>
+						<bv:dailyDosage>1300 mg</bv:dailyDosage>
+						<bv:startDate>2018-02-28</bv:startDate>
+					</bv:medication>
+				</bv:medications>
+				<bv:referentPhysicians>
+					<bv:referentPhysician refphysicianId="phy001" speciality="general practitioner"/>
+					<bv:referentPhysician refphysicianId="phy006" speciality="pulmonologist"/>
+				</bv:referentPhysicians>
+			</bv:medicalInformation>
+			<bv:medicalHistory>
+				<bv:medicalActs>
+					<bv:consultation date="2019-05-03" refMedSerId="phy001">
+						<bv:consultationResult>Patient has the flue</bv:consultationResult>
+						<bv:prescription>sleep/soup and ibuprofène</bv:prescription>
+					</bv:consultation>
+					<bv:laboratoryTest date="2016-03-04" refMedSerId="lab003">
+						<bv:pathologieTested>Syphilis</bv:pathologieTested>
+						<bv:testResult>0</bv:testResult>
+					</bv:laboratoryTest>
+					<bv:laboratoryTest date="2016-03-04" refMedSerId="lab003">
+						<bv:pathologieTested>HIV</bv:pathologieTested>
+						<bv:testResult>0</bv:testResult>
+					</bv:laboratoryTest>
+					<bv:laboratoryTest date="2021-06-10" refMedSerId="lab002">
+						<bv:pathologieTested>bigvir84</bv:pathologieTested>
+						<bv:testResult>0</bv:testResult>
+					</bv:laboratoryTest>
+					<bv:surgery date="2012-06-15" refMedSerId="phy006">
+						<bv:interventionDescription>lung partial removal</bv:interventionDescription>
+					</bv:surgery>
+					<bv:hospitalisation date="2012-06-14" refMedSerId="hosp001">
+						<bv:reason>lung surgery</bv:reason>
+						<bv:lengthInDays>5</bv:lengthInDays>
+					</bv:hospitalisation>
+				</bv:medicalActs>
+				<bv:vaccinationStatutes>
+					<bv:vaccin date="2003-05-18">
+						<bv:pathologie>thetanos</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2001-06-07">
+						<bv:pathologie>hepatite A</bv:pathologie>
+						<bv:upToDate>0</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2021-05-07">
+						<bv:pathologie>bigvir84</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+				</bv:vaccinationStatutes>
+			</bv:medicalHistory>
+			<bv:socialInformation>
+				<bv:socialHistory>
+					<bv:socialEvent date="2021-06-08">
+						<bv:placeOrEventName> Cathedral Saint-Pierre de Rennes </bv:placeOrEventName>
+						<bv:placeId>pla008</bv:placeId>
+					</bv:socialEvent>
+					<bv:socialEvent date="2021-06-09">
+						<bv:placeOrEventName> les tablées du Rheu </bv:placeOrEventName>
+						<bv:eventId>evt004</bv:eventId>
+					</bv:socialEvent>
+				</bv:socialHistory>
+			</bv:socialInformation>
+		</bv:citizen>
+	
+		<bv:citizen idCitizen="cit012">
+			<bv:personalInformation>
+				<bv:name>René</bv:name>
+				<bv:surname>Grosdésire</bv:surname>
+				<bv:dateOfBirth>1969-02-05</bv:dateOfBirth>
+				<bv:adress>34 rue du micozi, Marseille</bv:adress>
+				<bv:zipcode>13001</bv:zipcode>
+				<bv:mobilePhoneNumber>0617227873</bv:mobilePhoneNumber>
+				<bv:mailAdress>rene@hotmail.com</bv:mailAdress>
+			</bv:personalInformation>
+			<bv:medicalInformation>
+				<bv:sex>M</bv:sex>
+				<bv:weightKg>89</bv:weightKg>
+				<bv:heightCm>152</bv:heightCm>
+				<bv:age>52</bv:age>
+				<bv:referentPhysicians>
+					<bv:referentPhysician refphysicianId="phy004" speciality="general practitioner"/>
+				</bv:referentPhysicians>
+			</bv:medicalInformation>
+			<bv:medicalHistory>
+				<bv:medicalActs>
+					<bv:consultation date="2021-06-10" refMedSerId="phy009">
+						<bv:consultationResult>Patient present symptoms of bigvir84</bv:consultationResult>
+						<bv:prescription>Laboratory test for bigvir84</bv:prescription>
+					</bv:consultation>
+					<bv:laboratoryTest date="2021-06-11" refMedSerId="lab001">
+						<bv:pathologieTested>bigvir84</bv:pathologieTested>
+						<bv:testResult>1</bv:testResult>
+						<bv:resultDetails>patient positif to bigvir84 with a viral load of 0,1</bv:resultDetails>	
+					</bv:laboratoryTest>
+				</bv:medicalActs>
+				<bv:infections>
+					<bv:infection pathologie="Flu" date="2015-12-13"/>
+				</bv:infections>
+				<bv:immunizationStatus>
+					<bv:pathologie testDate="2015-06-19">
+						<bv:name>H1N1 flu</bv:name>
+						<bv:result>positif</bv:result>
+					</bv:pathologie>
+					<bv:pathologie testDate="2021-04-15">
+						<bv:name>bigvir84</bv:name>
+						<bv:result>negatif</bv:result>
+					</bv:pathologie>
+				</bv:immunizationStatus>
+				<bv:vaccinationStatutes>
+					<bv:vaccin date="2013-09-18">
+						<bv:pathologie>thetanos</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2002-06-07">
+						<bv:pathologie>hepatite A</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2011-06-07">
+						<bv:pathologie>polio</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+				</bv:vaccinationStatutes>
+			</bv:medicalHistory>
+			<bv:socialInformation>
+				<bv:socialRelations>
+					<bv:contactWithCitId citizenId="cit013" date="2021-06-10"/>
+					<bv:contactWithCitId citizenId="cit014" date="2021-06-09"/>
+				</bv:socialRelations>
+				<bv:socialHistory>
+					<bv:socialEvent date="2021-06-10">
+						<bv:placeOrEventName>Les tablées du rheu</bv:placeOrEventName>
+						<bv:eventId>evt004</bv:eventId>
+					</bv:socialEvent>
+					<bv:socialEvent date="2021-06-05">
+						<bv:placeOrEventName>Rolland Garos</bv:placeOrEventName>
+						<bv:eventId>evt005</bv:eventId>
+					</bv:socialEvent>
+				</bv:socialHistory>
+			</bv:socialInformation>
+		</bv:citizen>
+		
+		<bv:citizen idCitizen="cit013">
+			<bv:personalInformation>
+				<bv:name>Michel</bv:name>
+				<bv:surname>Rapala</bv:surname>
+				<bv:dateOfBirth>1982-08-13</bv:dateOfBirth>
+				<bv:adress>3 square micolapi, Saint-Denis</bv:adress>
+				<bv:zipcode>93000</bv:zipcode>
+				<bv:mobilePhoneNumber>0678834553</bv:mobilePhoneNumber>
+				<bv:mailAdress>rapalus@laposte.net</bv:mailAdress>
+			</bv:personalInformation>
+			<bv:medicalInformation>
+				<bv:sex>M</bv:sex>
+				<bv:weightKg>75</bv:weightKg>
+				<bv:heightCm>176</bv:heightCm>
+				<bv:age>39</bv:age>
+				<bv:referentPhysicians>
+					<bv:referentPhysician refphysicianId="phy004" speciality="general practitioner"/>
+				</bv:referentPhysicians>
+			</bv:medicalInformation>
+			<bv:medicalHistory>
+				<bv:medicalActs>
+					<bv:consultation date="2016-06-03" refMedSerId="phy004">
+						<bv:consultationResult>Patient has gastroenteritis</bv:consultationResult>
+						<bv:prescription>1 bag of smecta 2 times a days during 4 days</bv:prescription>
+					</bv:consultation>
+					<bv:consultation date="2021-06-06" refMedSerId="phy005">
+						<bv:consultationResult>Patient presents bigvir84 symptomas</bv:consultationResult>
+						<bv:prescription>bigvir84 medical test</bv:prescription>
+					</bv:consultation>
+					<bv:laboratoryTest date="2016-03-04" refMedSerId="lab003">
+						<bv:pathologieTested>HIV</bv:pathologieTested>
+						<bv:testResult>0</bv:testResult>
+					</bv:laboratoryTest>
+					<bv:laboratoryTest date="2021-06-07" refMedSerId="lab002">
+						<bv:pathologieTested>bigvir84</bv:pathologieTested>
+						<bv:testResult>0</bv:testResult>
+					</bv:laboratoryTest>
+				</bv:medicalActs>
+				<bv:infections>
+					<bv:infection pathologie="Yellow Fever" date="2017-03-14"/>
+					<bv:infection pathologie="malaria" date="2019-01-22"/>
+				</bv:infections>
+				<bv:vaccinationStatutes>
+					<bv:vaccin date="2007-09-18">
+						<bv:pathologie>thetanos</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2004-06-07">
+						<bv:pathologie>hepatite C</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+				</bv:vaccinationStatutes>
+			</bv:medicalHistory>
+			<bv:socialInformation>
+				<bv:socialRelations>
+					<bv:contactWithCitId date="2021-06-10" citizenId="cit012"/>
+				</bv:socialRelations>
+				<bv:socialHistory>
+					<bv:socialEvent date="2021-06-03">
+						<bv:placeOrEventName> parly 2 </bv:placeOrEventName>
+						<bv:placeId>pla005</bv:placeId>
+					</bv:socialEvent>
+					<bv:socialEvent date="2021-06-09">
+						<bv:placeOrEventName> Rolling Stones concert </bv:placeOrEventName>
+						<bv:eventId>evt003</bv:eventId>
+					</bv:socialEvent>
+				</bv:socialHistory>
+			</bv:socialInformation>
+		</bv:citizen>
+	
+		<bv:citizen idCitizen="cit014">
+			<bv:personalInformation>
+				<bv:name>Lara</bv:name>
+				<bv:surname>Fabian</bv:surname>
+				<bv:dateOfBirth>1961-03-15</bv:dateOfBirth>
+				<bv:adress>14 rue des boisiers, Le Rheu</bv:adress>
+				<bv:zipcode>35650</bv:zipcode>
+				<bv:mobilePhoneNumber>0617288634</bv:mobilePhoneNumber>
+				<bv:mailAdress>lara@hotmail.com</bv:mailAdress>
+			</bv:personalInformation>
+			<bv:medicalInformation>
+				<bv:sex>F</bv:sex>
+				<bv:weightKg>70</bv:weightKg>
+				<bv:heightCm>145</bv:heightCm>
+				<bv:age>60</bv:age>
+				<bv:medications>
+					<bv:medication>
+						<bv:drugName>prozac</bv:drugName>
+						<bv:dailyDosage>35 mg</bv:dailyDosage>
+						<bv:startDate>2020-03-15</bv:startDate>
+					</bv:medication>
+				</bv:medications>
+				<bv:referentPhysicians>
+					<bv:referentPhysician refphysicianId="phy004" speciality="general practitioner"/>
+					<bv:referentPhysician refphysicianId="phy009" speciality="psychiatrist"/>
+				</bv:referentPhysicians>
+			</bv:medicalInformation>
+			<bv:medicalHistory>
+				<bv:medicalActs>
+					<bv:consultation date="2020-02-15" refMedSerId="phy009">
+						<bv:consultationResult>Patient is depressive</bv:consultationResult>
+						<bv:prescription>prozac treatment, 35 mg a day during 6 mont</bv:prescription>
+					</bv:consultation>
+					<bv:consultation date="2021-06-08" refMedSerId="phy004">
+						<bv:consultationResult>Patient present bigvir84 symptomas</bv:consultationResult>
+						<bv:prescription>bigvir84 medical test</bv:prescription>
+					</bv:consultation>
+					<bv:laboratoryTest date="2021-06-10" refMedSerId="lab003">
+						<bv:pathologieTested>bigvir84</bv:pathologieTested>
+						<bv:testResult>0</bv:testResult>
+					</bv:laboratoryTest>
+					<bv:hospitalisation date="2014-10-12" refMedSerId="hosp003">
+						<bv:reason>Hepatite A</bv:reason>
+						<bv:lengthInDays>3</bv:lengthInDays>
+					</bv:hospitalisation>
+				</bv:medicalActs>
+				<bv:infections>
+					<bv:infection pathologie="Flu" date="2014-12-13"/>
+					<bv:infection pathologie="malaria" date="2014-01-22"/>
+				</bv:infections>
+				<bv:vaccinationStatutes>
+					<bv:vaccin date="2006-09-18">
+						<bv:pathologie>thetanos</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2001-06-07">
+						<bv:pathologie>hepatite A</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2013-06-07">
+						<bv:pathologie>polio</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2021-06-06">
+						<bv:pathologie>bigvir84</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+				</bv:vaccinationStatutes>
+			</bv:medicalHistory>
+			<bv:socialInformation>
+				<bv:socialRelations>
+					<bv:contactWithCitId date="2021-06-09" citizenId="cit012"/>
+					<bv:contactWithCitId date="2021-06-12" citizenId="cit016"/>
+				</bv:socialRelations>
+				<bv:socialHistory>
+					<bv:socialEvent date="2021-06-02">
+						<bv:placeOrEventName> la fontaine au perles </bv:placeOrEventName>
+						<bv:placeId>pla009</bv:placeId>
+					</bv:socialEvent>
+					<bv:socialEvent date="2021-06-09">
+						<bv:placeOrEventName> match Paris/Marseille</bv:placeOrEventName>
+						<bv:eventId>evt006</bv:eventId>
+					</bv:socialEvent>
+					<bv:socialEvent date="2021-06-08">
+						<bv:placeOrEventName> Rolland Garros</bv:placeOrEventName>
+						<bv:eventId>evt005</bv:eventId>
+					</bv:socialEvent>
+				</bv:socialHistory>
+			</bv:socialInformation>
+		</bv:citizen>
+	
+		<bv:citizen idCitizen="cit015">
+			<bv:personalInformation>
+				<bv:name>Maliko</bv:name>
+				<bv:surname>Paco</bv:surname>
+				<bv:dateOfBirth>1952-02-12</bv:dateOfBirth>
+				<bv:adress>35 rue malakoff, Tours </bv:adress>
+				<bv:zipcode>37000</bv:zipcode>
+				<bv:fixPhoneNumber>0299641396</bv:fixPhoneNumber>
+				<bv:mailAdress>pacomaliko@google.net</bv:mailAdress>
+			</bv:personalInformation>
+			<bv:medicalInformation>
+				<bv:sex>M</bv:sex>
+				<bv:weightKg>63</bv:weightKg>
+				<bv:heightCm>176</bv:heightCm>
+				<bv:age>69</bv:age>
+				<bv:referentPhysicians>
+					<bv:referentPhysician refphysicianId="phy003" speciality="general practitioner"/>
+					<bv:referentPhysician refphysicianId="phy005" speciality="cardiologist"/>
+				</bv:referentPhysicians>
+				<bv:Allergies>Pollen</bv:Allergies>
+			</bv:medicalInformation>
+			<bv:medicalHistory>
+				<bv:medicalActs>
+					<bv:consultation date="2021-06-04" refMedSerId="phy001">
+						<bv:consultationResult>Patient present bigvir84 symptomas</bv:consultationResult>
+						<bv:prescription>bigvir84 medical test</bv:prescription>
+					</bv:consultation>
+					<bv:laboratoryTest date="2015-03-04" refMedSerId="lab003">
+						<bv:pathologieTested>HIV</bv:pathologieTested>
+						<bv:testResult>0</bv:testResult>
+					</bv:laboratoryTest>
+					<bv:laboratoryTest date="2021-06-04" refMedSerId="lab003">
+						<bv:pathologieTested>bigvir84</bv:pathologieTested>
+						<bv:testResult>0</bv:testResult>
+					</bv:laboratoryTest>
+					<bv:surgery date="2014-06-15" refMedSerId="phy005">
+						<bv:interventionDescription>Hearth replacement surgery</bv:interventionDescription>
+					</bv:surgery>
+				</bv:medicalActs>
+				<bv:infections>
+					<bv:infection pathologie="malaria" date="2014-06-14"/>
+				</bv:infections>
+				<bv:immunizationStatus>
+					<bv:pathologie testDate="2015-06-19">
+						<bv:name>H1N1 flu</bv:name>
+						<bv:result>negatif</bv:result>
+					</bv:pathologie>
+					<bv:pathologie testDate="2021-04-15">
+						<bv:name>bigvir84</bv:name>
+						<bv:result>negatif</bv:result>
+					</bv:pathologie>
+				</bv:immunizationStatus>
+				<bv:vaccinationStatutes>
+					<bv:vaccin date="2006-09-18">
+						<bv:pathologie>thetanos</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2002-06-07">
+						<bv:pathologie>hepatite A</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2021-05-25">
+						<bv:pathologie>bigvir84</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+				</bv:vaccinationStatutes>
+			</bv:medicalHistory>
+			<bv:socialInformation>
+				<bv:socialRelations>
+					<bv:contactWithCitId date="2021-06-09" citizenId="cit016">
+						<bv:locationAdress latitude="48.111591" longitude="-1.685311">36 rue du champ jacquet Rennes 35000</bv:locationAdress>
+					</bv:contactWithCitId>
+					<bv:contactWithCitId date="2021-06-08" citizenId="cit018">
+					</bv:contactWithCitId>
+				</bv:socialRelations>
+				<bv:socialHistory>
+					<bv:socialEvent date="2021-06-02">
+						<bv:placeOrEventName> Musee des beaux arts </bv:placeOrEventName>
+						<bv:placeId>pla003</bv:placeId>
+					</bv:socialEvent>
+					<bv:socialEvent date="2021-06-07">
+						<bv:placeOrEventName> Cinema CGR </bv:placeOrEventName>
+						<bv:placeId>pla004</bv:placeId>
+					</bv:socialEvent>
+					<bv:socialEvent date="2021-06-08">
+						<bv:placeOrEventName> Rolland Garos </bv:placeOrEventName>
+						<bv:eventId>evt005</bv:eventId>
+					</bv:socialEvent>
+				</bv:socialHistory>
+			</bv:socialInformation>
+		</bv:citizen>
+		
+		<bv:citizen idCitizen="cit016">
+			<bv:personalInformation>
+				<bv:name>Catherine</bv:name>
+				<bv:surname>Calipo</bv:surname>
+				<bv:dateOfBirth>1988-02-05</bv:dateOfBirth>
+				<bv:adress>32 rue du chapitre, Paris</bv:adress>
+				<bv:zipcode>75016</bv:zipcode>
+				<bv:mobilePhoneNumber>0618299893</bv:mobilePhoneNumber>
+				<bv:mailAdress>catochlabamboch@hotmail.com</bv:mailAdress>
+			</bv:personalInformation>
+			<bv:medicalInformation>
+				<bv:sex>F</bv:sex>
+				<bv:weightKg>50</bv:weightKg>
+				<bv:heightCm>160</bv:heightCm>
+				<bv:age>33</bv:age>
+				<bv:medications>
+					<bv:medication>
+						<bv:drugName>keppra</bv:drugName>
+						<bv:dailyDosage>500 mg</bv:dailyDosage>
+						<bv:startDate>2019-02-15</bv:startDate>
+					</bv:medication>
+				</bv:medications>
+				<bv:referentPhysicians>
+					<bv:referentPhysician refphysicianId="phy002" speciality="general practitioner"/>
+					<bv:referentPhysician refphysicianId="phy007" speciality="neurologue / brain surgeon"/>
+				</bv:referentPhysicians>
+			</bv:medicalInformation>
+			<bv:medicalHistory>
+				<bv:medicalActs>
+					<bv:consultation date="2019-01-01" refMedSerId="phy009">
+						<bv:consultationResult>Patient present multiple signs of epilepsie</bv:consultationResult>
+						<bv:prescription>consultation with a neurologist</bv:prescription>
+					</bv:consultation>
+					<bv:consultation date="2019-01-05" refMedSerId="phy007">
+						<bv:consultationResult>Patient present a kyst in the right part of the brain</bv:consultationResult>
+						<bv:prescription>surgery to remove the kyst, 500mg/day of keppra for 6 month following the surgery </bv:prescription>
+					</bv:consultation>
+					<bv:surgery date="2019-01-12" refMedSerId="phy007">
+						<bv:generalComments>operation succefull with no postsurgery complications</bv:generalComments>
+						<bv:interventionDescription>Removal of a kyst in the right hemisphère of the brain</bv:interventionDescription>
+					</bv:surgery>
+					<bv:hospitalisation date="2019-01-12" refMedSerId="hosp002">
+						<bv:reason>brain surgery</bv:reason>
+						<bv:lengthInDays>5</bv:lengthInDays>
+					</bv:hospitalisation>
+				</bv:medicalActs>
+				<bv:infections>
+					<bv:infection pathologie="Flu" date="2015-12-13"/>
+				</bv:infections>
+				<bv:vaccinationStatutes>
+					<bv:vaccin date="2006-09-18">
+						<bv:pathologie>polio</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2001-06-07">
+						<bv:pathologie>hepatite A</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2013-06-07">
+						<bv:pathologie>polio</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2021-06-14">
+						<bv:pathologie>bigvir84</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+				</bv:vaccinationStatutes>
+			</bv:medicalHistory>
+			<bv:socialInformation>
+				<bv:socialRelations>
+					<bv:contactWithCitId date="2021-06-12" citizenId="cit014"/>
+				</bv:socialRelations>
+				<bv:socialHistory>
+					<bv:socialEvent date="2021-06-11">
+						<bv:placeOrEventName>Les tablées du rheu</bv:placeOrEventName>
+						<bv:eventId>evt004</bv:eventId>
+					</bv:socialEvent>
+				</bv:socialHistory>
+			</bv:socialInformation>
+		</bv:citizen>
+		
+		<bv:citizen idCitizen="cit017">
+			<bv:personalInformation>
+				<bv:name>Virgile</bv:name>
+				<bv:surname>Salipo</bv:surname>
+				<bv:dateOfBirth>1995-09-13</bv:dateOfBirth>
+				<bv:adress>4 rue de la chipo, Le Rheu</bv:adress>
+				<bv:zipcode>35650</bv:zipcode>
+				<bv:mobilePhoneNumber>0618599045</bv:mobilePhoneNumber>
+				<bv:mailAdress>salipo@laposte.net</bv:mailAdress>
+			</bv:personalInformation>
+			<bv:medicalInformation>
+				<bv:sex>M</bv:sex>
+				<bv:weightKg>73</bv:weightKg>
+				<bv:heightCm>183</bv:heightCm>
+				<bv:age>25</bv:age>
+				<bv:referentPhysicians>
+					<bv:referentPhysician refphysicianId="phy001" speciality="general practitioner"/>
+				</bv:referentPhysicians>
+			</bv:medicalInformation>
+			<bv:medicalHistory>
+				<bv:medicalActs>
+					<bv:consultation date="2021-06-07" refMedSerId="phy001">
+						<bv:consultationResult>Patient present bigvir84 symptomas</bv:consultationResult>
+						<bv:prescription>bigvir84 medical test</bv:prescription>
+					</bv:consultation>
+					<bv:laboratoryTest date="2021-06-08" refMedSerId="lab003">
+						<bv:pathologieTested>bigvir84</bv:pathologieTested>
+						<bv:testResult>1</bv:testResult>
+						<bv:resultDetails>Patient positive to bigvir84 with viral load of 0.6</bv:resultDetails>
+					</bv:laboratoryTest>
+				</bv:medicalActs>
+				<bv:infections>
+					<bv:infection pathologie="malaria" date="2012-07-14"/>		
+				</bv:infections>
+				<bv:vaccinationStatutes>
+					<bv:vaccin date="2006-09-18">
+						<bv:pathologie>thetanos</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2002-06-07">
+						<bv:pathologie>hepatite A</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>	
+				</bv:vaccinationStatutes>
+			</bv:medicalHistory>
+			<bv:socialInformation>
+				<bv:socialHistory>
+					<bv:socialEvent date="2021-06-07">
+						<bv:placeOrEventName> Mall Bougaloo </bv:placeOrEventName>
+						<bv:placeId>pla002</bv:placeId>
+					</bv:socialEvent>
+					<bv:socialEvent date="2021-06-06">
+						<bv:placeOrEventName> Restaurant des 3 chips </bv:placeOrEventName>
+						<bv:placeId>pla001</bv:placeId>
+					</bv:socialEvent>
+					<bv:socialEvent date="2021-06-05">
+						<bv:placeOrEventName> Festival des vieilles charrues</bv:placeOrEventName>
+						<bv:eventId>evt001</bv:eventId>
+					</bv:socialEvent>
+				</bv:socialHistory>
+			</bv:socialInformation>
+		</bv:citizen>
+		
+		<bv:citizen idCitizen="cit018">
+			<bv:personalInformation>
+				<bv:name>Agathe</bv:name>
+				<bv:surname>Cretoipaire</bv:surname>
+				<bv:dateOfBirth>1983-03-15</bv:dateOfBirth>
+				<bv:adress>32 rue du talpso, Rennes</bv:adress>
+				<bv:zipcode>35000</bv:zipcode>
+				<bv:mobilePhoneNumber>0617288635</bv:mobilePhoneNumber>
+				<bv:mailAdress>agathe@hotmail.com</bv:mailAdress>
+			</bv:personalInformation>
+			<bv:medicalInformation>
+				<bv:sex>F</bv:sex>
+				<bv:weightKg>90</bv:weightKg>
+				<bv:heightCm>162</bv:heightCm>
+				<bv:age>38</bv:age>
+				<bv:medications>
+					<bv:medication>
+						<bv:drugName>prozac</bv:drugName>
+						<bv:dailyDosage>35 mg</bv:dailyDosage>
+						<bv:startDate>2019-03-15</bv:startDate>
+					</bv:medication>
+				</bv:medications>
+				<bv:referentPhysicians>
+					<bv:referentPhysician refphysicianId="phy001" speciality="general practitioner"/>
+					<bv:referentPhysician refphysicianId="phy009" speciality="psychiatrist"/>
+				</bv:referentPhysicians>
+			</bv:medicalInformation>
+			<bv:medicalHistory>
+				<bv:medicalActs>
+					<bv:consultation date="2019-02-15" refMedSerId="phy009">
+						<bv:consultationResult>Patient is depressive</bv:consultationResult>
+						<bv:prescription>prozac treatment, 35 mg a day during 6 mont</bv:prescription>
+					</bv:consultation>
+					<bv:consultation date="2021-06-08" refMedSerId="phy002">
+						<bv:consultationResult>Patient present bigvir84 symptomas</bv:consultationResult>
+						<bv:prescription>bigvir84 medical test</bv:prescription>
+					</bv:consultation>
+					<bv:laboratoryTest date="2021-06-10" refMedSerId="lab003">
+						<bv:pathologieTested>bigvir84</bv:pathologieTested>
+						<bv:testResult>0</bv:testResult>
+					</bv:laboratoryTest>
+					<bv:hospitalisation date="2019-10-12" refMedSerId="hosp003">
+						<bv:reason>Hepatite C</bv:reason>
+						<bv:lengthInDays>3</bv:lengthInDays>
+					</bv:hospitalisation>
+				</bv:medicalActs>
+				<bv:infections>
+					<bv:infection pathologie="Flu" date="2019-12-14"/>
+					<bv:infection pathologie="malaria" date="2014-01-22"/>
+				</bv:infections>
+				<bv:vaccinationStatutes>
+					<bv:vaccin date="2006-09-18">
+						<bv:pathologie>thetanos</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2001-06-07">
+						<bv:pathologie>hepatite A</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2013-06-07">
+						<bv:pathologie>polio</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+				</bv:vaccinationStatutes>
+			</bv:medicalHistory>
+			<bv:socialInformation>
+				<bv:socialRelations>
+					<bv:contactWithCitId date="2021-06-08" citizenId="cit015"/>
+				</bv:socialRelations>
+				<bv:socialHistory>
+					<bv:socialEvent date="2021-06-02">
+						<bv:placeOrEventName> la fontaine au perles </bv:placeOrEventName>
+						<bv:placeId>pla009</bv:placeId>
+					</bv:socialEvent>
+					<bv:socialEvent date="2021-06-09">
+						<bv:placeOrEventName> match Paris/Marseille</bv:placeOrEventName>
+						<bv:eventId>evt006</bv:eventId>
+					</bv:socialEvent>
+					<bv:socialEvent date="2021-06-08">
+						<bv:placeOrEventName> Rolland Garros</bv:placeOrEventName>
+						<bv:eventId>evt005</bv:eventId>
+					</bv:socialEvent>
+				</bv:socialHistory>
+			</bv:socialInformation>
+		</bv:citizen>
+		
+		<bv:citizen idCitizen="cit019">
+			<bv:personalInformation>
+				<bv:name>Norbert</bv:name>
+				<bv:surname>Elsangliado</bv:surname>
+				<bv:dateOfBirth>1973-05-12</bv:dateOfBirth>
+				<bv:adress>3 square Gilbert Boulard, Paris</bv:adress>
+				<bv:zipcode>75011</bv:zipcode>
+				<bv:mobilePhoneNumber>0678359553</bv:mobilePhoneNumber>
+				<bv:mailAdress>norberto@laposte.net</bv:mailAdress>
+			</bv:personalInformation>
+			<bv:medicalInformation>
+				<bv:sex>M</bv:sex>
+				<bv:weightKg>80</bv:weightKg>
+				<bv:heightCm>185</bv:heightCm>
+				<bv:age>48</bv:age>
+				<bv:referentPhysicians>
+					<bv:referentPhysician refphysicianId="phy002" speciality="general practitioner"/>
+				</bv:referentPhysicians>
+			</bv:medicalInformation>
+			<bv:medicalHistory>
+				<bv:medicalActs>
+					<bv:consultation date="2015-06-03" refMedSerId="phy003">
+						<bv:consultationResult>Patient has gastroenteritis</bv:consultationResult>
+						<bv:prescription>1 bag of smecta 2 times a days during 4 days</bv:prescription>
+					</bv:consultation>
+					<bv:consultation date="2021-06-06" refMedSerId="phy005">
+						<bv:consultationResult>Patient presents bigvir84 symptomas</bv:consultationResult>
+						<bv:prescription>bigvir84 medical test</bv:prescription>
+					</bv:consultation>
+					<bv:laboratoryTest date="2021-06-07" refMedSerId="lab002">
+						<bv:pathologieTested>bigvir84</bv:pathologieTested>
+						<bv:testResult>0</bv:testResult>
+					</bv:laboratoryTest>
+				</bv:medicalActs>
+				<bv:infections>
+					<bv:infection pathologie="Yellow Fever" date="2017-03-14"/>
+					<bv:infection pathologie="Dengue" date="2019-01-22"/>
+				</bv:infections>
+				<bv:vaccinationStatutes>
+					<bv:vaccin date="2006-09-18">
+						<bv:pathologie>thetanos</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2002-06-07">
+						<bv:pathologie>hepatite C</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2021-06-01">
+						<bv:pathologie>bigvir84</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+				</bv:vaccinationStatutes>
+			</bv:medicalHistory>
+			<bv:socialInformation>
+				<bv:socialHistory>
+					<bv:socialEvent date="2021-06-03">
+						<bv:placeOrEventName> parly 2 </bv:placeOrEventName>
+						<bv:placeId>pla005</bv:placeId>
+					</bv:socialEvent>
+					<bv:socialEvent date="2021-06-09">
+						<bv:placeOrEventName> Rolling Stones concert </bv:placeOrEventName>
+						<bv:eventId>evt003</bv:eventId>
+					</bv:socialEvent>
+				</bv:socialHistory>
+			</bv:socialInformation>
+		</bv:citizen>
+		
+		<bv:citizen idCitizen="cit020">
+			<bv:personalInformation>
+				<bv:name>Laurie</bv:name>
+				<bv:surname>Gapleur</bv:surname>
+				<bv:dateOfBirth>1969-10-05</bv:dateOfBirth>
+				<bv:adress>3 rue du l'italie, Paris</bv:adress>
+				<bv:zipcode>75013</bv:zipcode>
+				<bv:fixPhoneNumber>0299873480</bv:fixPhoneNumber>
+				<bv:mailAdress>laulau@hotmail.com</bv:mailAdress>
+			</bv:personalInformation>
+			<bv:medicalInformation>
+				<bv:sex>F</bv:sex>
+				<bv:weightKg>85</bv:weightKg>
+				<bv:heightCm>155</bv:heightCm>
+				<bv:age>51</bv:age>
+				<bv:referentPhysicians>
+					<bv:referentPhysician refphysicianId="phy003" speciality="general practitioner"/>
+				</bv:referentPhysicians>
+			</bv:medicalInformation>
+			<bv:medicalHistory>
+				<bv:medicalActs>
+					 <bv:consultation date="2021-06-04" refMedSerId="phy001">
+						<bv:consultationResult>Patient present bigvir84 symptomas</bv:consultationResult>
+						<bv:prescription>bigvir84 medical test</bv:prescription>
+					</bv:consultation>
+					<bv:laboratoryTest date="2015-03-04" refMedSerId="lab003">
+						<bv:pathologieTested>HIV</bv:pathologieTested>
+						<bv:testResult>0</bv:testResult>
+					</bv:laboratoryTest>
+					<bv:laboratoryTest date="2021-06-04" refMedSerId="lab003">
+						<bv:pathologieTested>bigvir84</bv:pathologieTested>
+						<bv:testResult>0</bv:testResult>
+					</bv:laboratoryTest>
+				</bv:medicalActs>
+				<bv:infections>
+					<bv:infection pathologie="Flu" date="2015-12-13"/>
+				</bv:infections>
+				<bv:vaccinationStatutes>
+					<bv:vaccin date="2006-09-18">
+						<bv:pathologie>thetanos</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2001-06-07">
+						<bv:pathologie>hepatite A</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+					<bv:vaccin date="2013-06-07">
+						<bv:pathologie>polio</bv:pathologie>
+						<bv:upToDate>1</bv:upToDate>
+					</bv:vaccin>
+				</bv:vaccinationStatutes>
+			</bv:medicalHistory>
+			<bv:socialInformation>
+				<bv:socialHistory>
+					<bv:socialEvent date="2021-06-10">
+						<bv:placeOrEventName>Les tablées du rheu</bv:placeOrEventName>
+						<bv:eventId>evt004</bv:eventId>
+					</bv:socialEvent>
+					<bv:socialEvent date="2021-06-09">
+						<bv:placeOrEventName> Rolling Stones concert </bv:placeOrEventName>
+						<bv:eventId>evt003</bv:eventId>
+					</bv:socialEvent>
+				</bv:socialHistory>
+			</bv:socialInformation>
+		</bv:citizen>
+		
+	</bv:citizens>
+
+	<bv:medicalServices>
+		<bv:medicalService medSerId="phy001">
+			<bv:name>Herbert </bv:name>
+			<bv:surname>Folamour</bv:surname>
+			<bv:adress>3 rue de la chips, 75001, Paris, France</bv:adress>
+			<bv:type>physician</bv:type>	
+			<bv:speciality>General practitioner</bv:speciality>
+			<bv:phoneNumber>0228899880</bv:phoneNumber>
+			<bv:mailAdress>herbertfolamour@gmail.com</bv:mailAdress>
+		</bv:medicalService>
+		<bv:medicalService medSerId="phy002">
+			<bv:name>Johnny </bv:name>
+			<bv:surname>Walker</bv:surname>
+			<bv:adress>5 rue de la fleur, 75002, Paris France</bv:adress>
+			<bv:type>physician</bv:type>
+			<bv:speciality>General practitioner</bv:speciality>
+			<bv:phoneNumber>0228899843</bv:phoneNumber>
+			<bv:mailAdress>johnnywalker@gmail.com</bv:mailAdress>
+		</bv:medicalService>
+		<bv:medicalService medSerId="phy003">
+			<bv:name>Marcel </bv:name>
+			<bv:surname>Calot</bv:surname>
+			<bv:adress>32 rue du pupitre , 75007, Paris, France</bv:adress>
+			<bv:type>physician</bv:type>			
+			<bv:speciality>General practitioner</bv:speciality>
+			<bv:phoneNumber>0228899854</bv:phoneNumber>
+			<bv:mailAdress>chipokito@gmail.com</bv:mailAdress>
+		</bv:medicalService>
+		<bv:medicalService medSerId="phy004">
+			<bv:name>Jean-Yves </bv:name>
+			<bv:surname>Bestmed</bv:surname>
+			<bv:adress>5 rue Hugo Boss, 75013, Paris, France</bv:adress>
+			<bv:type>physician</bv:type>
+			<bv:speciality>general practitioner</bv:speciality>
+			<bv:phoneNumber>0228899876</bv:phoneNumber>
+			<bv:mailAdress>picoloco@gmail.com</bv:mailAdress>
+		</bv:medicalService>
+		<bv:medicalService medSerId="phy005">
+			<bv:name>Alain</bv:name>
+			<bv:surname>Brisecoeurs</bv:surname>
+			<bv:adress>22 rue de la chips, 75001, Paris, France</bv:adress>
+			<bv:type>physician</bv:type>
+			<bv:speciality>cardiologist</bv:speciality>
+			<bv:phoneNumber>0228899834</bv:phoneNumber>
+			<bv:mailAdress>alino@gmail.com</bv:mailAdress>
+		</bv:medicalService>
+		<bv:medicalService medSerId="phy006">
+			<bv:name>Jose</bv:name>
+			<bv:surname>Megapoumons</bv:surname>
+			<bv:adress>33 rue du beaucheval, 35000, Rennes France</bv:adress>
+			<bv:type>physician</bv:type>
+			<bv:speciality>pulmonologist</bv:speciality>
+			<bv:phoneNumber>0228789834</bv:phoneNumber>
+			<bv:mailAdress>josopil@gmail.com</bv:mailAdress>
+		</bv:medicalService>
+		<bv:medicalService medSerId="phy007">
+			<bv:name>Ivan</bv:name>
+			<bv:surname>Cerebro</bv:surname>
+			<bv:adress>15 rue du fleuron, 35650, Le Rheu, France</bv:adress>
+			<bv:type>physician</bv:type>		
+			<bv:speciality>neurologist / brain surgeon</bv:speciality>
+			<bv:phoneNumber>0228459834</bv:phoneNumber>
+			<bv:mailAdress>ivanleterrible@gmail.com</bv:mailAdress>
+		</bv:medicalService>
+		<bv:medicalService medSerId="phy008">
+			<bv:name>Vladimir</bv:name>
+			<bv:surname>Grobiscoto</bv:surname>
+			<bv:adress>35 rue du pipo, 75001, Paris, France</bv:adress>
+			<bv:type>physician</bv:type>
+			<bv:speciality>orthopedic surgeon</bv:speciality>
+			<bv:phoneNumber>0228453457</bv:phoneNumber>
+			<bv:mailAdress>geriutlo@gmail.com</bv:mailAdress>
+		</bv:medicalService>
+		<bv:medicalService medSerId="phy009">
+			<bv:name>Globos</bv:name>
+			<bv:surname>Vieumaboule</bv:surname>
+			<bv:adress>14 rue du grand chêne, 35590, l'Hermitage, France</bv:adress>
+			<bv:type>physician</bv:type>
+			<bv:speciality>psychiatrist</bv:speciality>
+			<bv:phoneNumber>0228453490</bv:phoneNumber>
+			<bv:mailAdress>vieumaboule@gmail.com</bv:mailAdress>
+		</bv:medicalService>
+		<bv:medicalService medSerId="hosp001">
+			<bv:name>CHU pontchaillou </bv:name>
+			<bv:adress>28 rue du garage, 35000, Rennes, France</bv:adress>
+			<bv:type>hospital</bv:type>
+			<bv:phoneNumber>0228899843</bv:phoneNumber>
+			<bv:mailAdress>chupontchaillou@gmail.com</bv:mailAdress>
+		</bv:medicalService>
+		<bv:medicalService medSerId="hosp002">
+			<bv:name>Hopital sud </bv:name>
+			<bv:adress>5 rue du losange, 75001, Paris France</bv:adress>
+			<bv:type>hospital</bv:type>
+			<bv:phoneNumber>0228899856</bv:phoneNumber>
+			<bv:mailAdress>hopitalsud@gmail.com</bv:mailAdress>
+		</bv:medicalService>
+		<bv:medicalService medSerId="hosp003">
+			<bv:name>Clinic de la sagesse </bv:name>
+			<bv:adress>53 rue Marcel Pinmico, 75016, Paris, France</bv:adress>
+			<bv:type>hospital</bv:type>
+			<bv:phoneNumber>0228899886</bv:phoneNumber>
+			<bv:mailAdress>lasagesse@gmail.com</bv:mailAdress>
+		</bv:medicalService>
+		<bv:medicalService medSerId="lab001">
+			<bv:name>Laboratoire d'analyse de la sagesse </bv:name>
+			<bv:adress>15 rue de la chips, 75001, Paris, France</bv:adress>
+			<bv:type>medical laboratory</bv:type>
+			<bv:phoneNumber>0228899845</bv:phoneNumber>
+			<bv:mailAdress>labanalysesagess@gmail.com</bv:mailAdress>
+		</bv:medicalService>
+		<bv:medicalService medSerId="lab002">
+			<bv:name>Laboratoire d'analyse du tourniquet </bv:name>
+			<bv:adress>14 rue de la chips, 35001, Rennes, France</bv:adress>
+			<bv:type>medical laboratory</bv:type>
+			<bv:phoneNumber>0228845674</bv:phoneNumber>
+			<bv:mailAdress>labanalysetourniquet@gmail.com</bv:mailAdress>
+		</bv:medicalService>
+		<bv:medicalService medSerId="lab003">
+			<bv:name>Laboratoire d'analyse place vendôme </bv:name>
+			<bv:adress>35 rue de la vallée, 75014, Paris, France</bv:adress>
+			<bv:type>medical laboratory</bv:type>
+			<bv:phoneNumber>0228345665</bv:phoneNumber>
+			<bv:mailAdress>labplacevendome@gmail.com</bv:mailAdress>
+		</bv:medicalService>
+	</bv:medicalServices>
+	
+	<bv:events>
+		<bv:event eventId="evt001">
+			<bv:date>2021-06-04</bv:date>
+			<bv:endDate>2021-06-06</bv:endDate>
+			<bv:name>les vieilles charrues</bv:name>
+			<bv:locationAdress latitude="48.829495" longitude="2.442925"> Bois de vincennes, 75012 Paris, France </bv:locationAdress>
+			<bv:type>festival</bv:type>
+		</bv:event>
+		<bv:event eventId="evt002">
+			<bv:date>2021-05-07</bv:date>
+			<bv:endDate>2021-06-06</bv:endDate>
+			<bv:name>la foire du trône</bv:name>
+			<bv:locationAdress latitude="48.8852827" longitude="2.1000292"> Place de la nation, 75011 Paris, France </bv:locationAdress>
+			<bv:type>fair</bv:type>
+		</bv:event>
+		<bv:event eventId="evt003">
+			<bv:date>2021-06-09</bv:date>
+			<bv:endDate>2021-06-09</bv:endDate>
+			<bv:name>Concert des rolling stones</bv:name>
+			<bv:locationAdress latitude="48.8630099" longitude="2.3684218"> 50 Boulevard Voltaire, 75011 Paris, France </bv:locationAdress>
+			<bv:type>concert</bv:type>
+		</bv:event>
+		<bv:event eventId="evt004">
+			<bv:date>2021-06-09</bv:date>
+			<bv:endDate>2021-06-12</bv:endDate>
+			<bv:name>les tablées du Rheu</bv:name>
+			<bv:locationAdress latitude="48.0970897" longitude="-1.8232879"> Place de la mairie, 35650 Le Rheu, France </bv:locationAdress>
+			<bv:type>fair</bv:type>
+		</bv:event>
+		<bv:event eventId="evt005">
+			<bv:date>2021-06-01</bv:date>
+			<bv:endDate>2021-06-20</bv:endDate>
+			<bv:name>Rolland Garros</bv:name>
+			<bv:locationAdress latitude="48.8452222" longitude="2.2535268"> 2 Avenue Gordon Bennett, 75016 Paris, France </bv:locationAdress>
+			<bv:type>sport event</bv:type>
+		</bv:event>
+		<bv:event eventId="evt006">
+			<bv:date>2021-06-09</bv:date>
+			<bv:endDate>2021-06-09</bv:endDate>
+			<bv:name>match Paris/Marseille</bv:name>
+			<bv:locationAdress latitude="48.9244592" longitude="2.3601645"> Stade de France, 93200 Saint-Denis, France </bv:locationAdress>
+			<bv:type>sport event</bv:type>
+		</bv:event>		
+	</bv:events>
+		
+	<bv:publicPlaces>
+		<bv:publicPlace publicPlaceId="pla001">
+			<bv:name>Restaurant des 3 chips</bv:name>
+			<bv:locationAdress latitude="48.8656921" longitude="2.3041976">66 Rue de Tolbiac, 75013 Paris, France </bv:locationAdress>
+			<bv:type>restaurant</bv:type>
+		</bv:publicPlace>
+		<bv:publicPlace publicPlaceId="pla002">
+			<bv:name>Mall Boogaloo</bv:name>
+			<bv:locationAdress>36 Avenue Edison, 75013 Paris, France </bv:locationAdress>
+			<bv:type>mall</bv:type>
+		</bv:publicPlace>
+		<bv:publicPlace publicPlaceId="pla003">
+			<bv:name>Musée des beaux Arts</bv:name>
+			<bv:locationAdress latitude="48.8613241" longitude="2.3158136">3 Avenue Roberto, 75013 Paris, France </bv:locationAdress>
+			<bv:type>museum</bv:type>
+		</bv:publicPlace>
+		<bv:publicPlace publicPlaceId="pla004">
+			<bv:name>Mega CGR</bv:name>
+			<bv:locationAdress latitude="48.2060338" longitude="-1.7339139">Zone de Millet, ZAC de Cap Malo, 35520 La Mézière, France </bv:locationAdress>
+			<bv:type>cinema</bv:type>
+		</bv:publicPlace>
+		<bv:publicPlace publicPlaceId="pla005">
+			<bv:name>Parly 2</bv:name>
+			<bv:locationAdress latitude="45.8561385" longitude="6.7991069"> 2 Avenue Charles de Gaulle, 78150 Le Chesnay-Rocquencourt, France </bv:locationAdress>
+			<bv:type>mall</bv:type>
+		</bv:publicPlace>
+		<bv:publicPlace publicPlaceId="pla006">
+			<bv:name>gare du nord</bv:name>
+			<bv:locationAdress latitude="48.8809481" longitude="2.3553137"> 18 Rue de Dunkerque, 75010 Paris, France</bv:locationAdress>
+			<bv:type>railway station</bv:type>
+		</bv:publicPlace>
+		<bv:publicPlace publicPlaceId="pla007">
+			<bv:name>Aeroport Paris-Charles de Gaulle</bv:name>
+			<bv:locationAdress latitude="49.009644" longitude="2.5453871"> 95700 Roissy-en-France, France</bv:locationAdress>
+			<bv:type>airport</bv:type>
+		</bv:publicPlace>
+		<bv:publicPlace publicPlaceId="pla008">
+			<bv:name>Cathedral Saint-Pierre de Rennes</bv:name>
+			<bv:locationAdress latitude="48.1120062" longitude="-1.686585"> Rue de la Monnaie, 35000 Rennes, France</bv:locationAdress>
+			<bv:type>church</bv:type>
+		</bv:publicPlace>
+		<bv:publicPlace publicPlaceId="pla009">
+			<bv:name>la fontaine au perle</bv:name>
+			<bv:locationAdress latitude="48.0936627" longitude="-1.645559"> 96 Rue de la Poterie, 35200 Rennes, France</bv:locationAdress>
+			<bv:type>restaurant</bv:type>
+		</bv:publicPlace>
+		
+	</bv:publicPlaces>
+
+</bv:BigVir2084_database>

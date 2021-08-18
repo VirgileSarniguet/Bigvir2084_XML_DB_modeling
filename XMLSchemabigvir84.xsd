@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://finalassignment.org/XMLbigvir84Schema" elementFormDefault="qualified" xmlns:bv="http://finalassignment.org/XMLbigvir84Schema">
+	<xs:element name="BigVir2084_database" type="bv:BigVir2084_databasetype">
+		
+		<!-- Each medical service ID is a key -->
+		<xs:key name="medKey">
+				<xs:selector xpath=".//bv:medicalService"/>
+				<xs:field xpath="@medSerId"/>
+			</xs:key>
+		<!-- Each citizen as one or more referent physician which id refer to the medical service key -->
+		<xs:keyref name="refphysician" refer="bv:medKey">
+				<xs:selector xpath=".//bv:referentPhysician"/>
+				<xs:field xpath="@refphysicianId"/>
+		</xs:keyref>
+	
+		<!-- Each citizen ID is a key -->
+		<xs:key name="citKey">
+				<xs:selector xpath=".//bv:citizen"/>
+				<xs:field xpath="@idCitizen"/>
+		</xs:key>
+		<!-- Each citizen has some social event, in which is included contact with other citizen they had. Thus each contactwith ID refer to a citizen ID -->
+		<xs:keyref name="contactWith" refer="bv:citKey">
+				<xs:selector xpath=".//bv:contactWithCitId"/>
+				<xs:field xpath="@citizenId"/>
+		</xs:keyref>	
+		
+		<!-- Each medical act is executed by a medical service, thus the remefserID attribut reference a medical service id key -->
+		<xs:keyref name="refmedSerId" refer="bv:medKey">
+			<xs:selector xpath=".//bv:medicalActs/*"/>
+			<xs:field xpath="@refMedSerId"/>
+		</xs:keyref>
+
+		<!-- Each event ID is a key -->
+		<xs:key name="evtKey">
+			<xs:selector xpath=".//bv:event"/>
+			<xs:field xpath="@eventId"/>
+		</xs:key>
+		<!-- Citizens can participate to event which eventID refer to the event key-->
+		<xs:keyref name="event" refer="bv:evtKey">
+			<xs:selector xpath=".//bv:socialEvent"/>
+			<xs:field xpath="bv:eventId"/>
+		</xs:keyref>
+		
+		<!-- Each place ID is a key -->
+		<xs:key name="plaKey">
+			<xs:selector xpath=".//bv:publicPlace"/>
+			<xs:field xpath="@publicPlaceId"/>
+		</xs:key>
+		<!-- Citizens can go to a place which placeID refer to the place key-->
+		<xs:keyref name="placeev" refer="bv:plaKey">
+			<xs:selector xpath=".//bv:socialEvent"/>
+			<xs:field xpath="bv:placeId"/>
+		</xs:keyref>
+		
+	</xs:element>
+	<xs:complexType name="BigVir2084_databasetype">
+		<xs:sequence>
+			<xs:element name="citizens" type="bv:citizensType">
+			</xs:element>
+			<xs:element name="medicalServices" type="bv:medicalServices">
+			</xs:element>
+			<xs:element name="events" type="bv:eventsType"/>
+			<xs:element name="publicPlaces" type="bv:publicPlacesType"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="citizensType">
+		<xs:sequence>
+			<xs:element name="citizen" type="bv:citizenType" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="citizenType">
+		<xs:sequence>
+			<xs:element name="personalInformation" type="bv:personalInformationType"/>
+			<xs:element name="medicalInformation" type="bv:medicalInformationType"/>
+			<xs:element name="medicalHistory" type="bv:medicalHistoryType"/>
+			<xs:element name="socialInformation" type="bv:socialInformationType"/>
+		</xs:sequence>
+		<xs:attribute name="idCitizen" type="xs:string" use="required"/>
+	</xs:complexType>
+	
+	<xs:complexType name="personalInformationType">
+		<xs:sequence>
+			<xs:element name="name" type="xs:string"/>
+			<xs:element name="surname" type="xs:string"/>
+			<xs:element name="dateOfBirth" type="xs:date"/>
+			<xs:element name="adress" type="xs:string"/>
+			<xs:element name="zipcode">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="[0-9]{5}(-[0-9]{4})?"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:choice>
+				<xs:element name="mobilePhoneNumber">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:pattern value="\d{10}"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="fixPhoneNumber">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:pattern value="\d{10}"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+			</xs:choice>
+			<xs:element ref="bv:mailAdress"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="medicalInformationType">
+		<xs:sequence>
+			<xs:element name="sex">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="F"/>
+						<xs:enumeration value="M"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="weightKg" type="xs:positiveInteger"/>
+			<xs:element name="heightCm" type="xs:decimal"/>
+			<xs:element name="age" type="xs:positiveInteger"/>
+			<xs:element name="medications" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="medication" minOccurs="0" maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="drugName" type="xs:string"/>
+								<xs:element name="dailyDosage" type="xs:string"/>
+								<xs:element name="startDate" type="xs:date"/>		
+							</xs:sequence>
+						</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="referentPhysicians">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="referentPhysician" minOccurs="1" maxOccurs="unbounded"><!--A Citizen must have at least a general practitioner referent-->
+							<xs:complexType>
+								<xs:attribute name="refphysicianId" type="xs:string" use="required"/>
+								<xs:attribute name="speciality" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Allergies" minOccurs="0" maxOccurs="1">
+				<xs:simpleType>
+					<xs:list itemType="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="medicalHistoryType">
+		<xs:all>
+			<xs:element name="medicalActs" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="consultation" minOccurs="0" maxOccurs="unbounded">
+							<xs:complexType>	
+								<xs:complexContent>
+									<xs:extension base="bv:act">
+										<xs:sequence>
+											<xs:element name="consultationResult" type="xs:string"/>
+											<xs:element name="prescription" type="xs:string" minOccurs="0"/>
+										</xs:sequence>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="laboratoryTest" minOccurs="0" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="bv:act">
+										<xs:sequence>
+											<xs:element name="pathologieTested" type="xs:string"/>
+											<xs:element name="testResult" type="xs:boolean" minOccurs="0"/>
+											<xs:element name="resultDetails" type="xs:string" minOccurs="0"/>
+										</xs:sequence>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="surgery" minOccurs="0" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="bv:act">
+										<xs:sequence>
+											<xs:element name="interventionDescription" type="xs:string"/>
+										</xs:sequence>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="hospitalisation" minOccurs="0" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="bv:act">
+										<xs:sequence>
+											<xs:element name="reason" type="xs:string"/>
+											<xs:element name="lengthInDays" type="xs:nonNegativeInteger"/>
+										</xs:sequence>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>	
+				</xs:complexType>				
+			</xs:element>
+			<xs:element name="infections" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+					   <xs:element name="infection" maxOccurs="unbounded">
+						   <xs:complexType>
+							   <xs:attribute name="pathologie" type="xs:string"/>
+							   <xs:attribute name="date" type="xs:date"/>		
+						   </xs:complexType>
+					   </xs:element>
+					</xs:sequence>
+				</xs:complexType>	
+			</xs:element>
+			<xs:element name="vaccinationStatutes">
+				 <xs:complexType>
+					<xs:sequence>
+					   <xs:element name="vaccin" minOccurs="0" maxOccurs="unbounded">
+						   <xs:complexType>
+							   <xs:all>
+								  <xs:element name="pathologie" type="xs:string"/>	
+						          <xs:element name="upToDate" type="xs:boolean"/>
+							   </xs:all>
+							   <xs:attribute name="date" type="xs:date"/>
+						   </xs:complexType>
+					   </xs:element>
+					</xs:sequence>
+				</xs:complexType>	
+			</xs:element>
+			<xs:element name="immunizationStatus" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+					   <xs:element name="pathologie" minOccurs="0" maxOccurs="unbounded">
+						   <xs:complexType>
+							   <xs:all>
+								  <xs:element name="name" type="xs:string"/>	
+						          <xs:element name="result" type="xs:string"/>
+							   </xs:all>
+							   <xs:attribute name="testDate" type="xs:date"/>
+						   </xs:complexType>
+					   </xs:element>
+					</xs:sequence>
+				</xs:complexType>		
+			</xs:element>	
+		</xs:all>
+	</xs:complexType>
+	
+	<!-- Creation of the complextype act, which will be used as a basis for different extensions for all the different kind of medical acts -->
+	<xs:complexType name="act">
+		<xs:sequence>
+			<xs:element name="generalComments" type="xs:string" minOccurs="0" maxOccurs="1"/>
+		</xs:sequence>
+		<xs:attribute name="date" type="xs:date"/>
+		<xs:attribute name="refMedSerId" type="xs:string"/>
+	</xs:complexType>
+	
+	
+	<xs:complexType name="socialInformationType">
+		<xs:all>
+			<xs:element name="socialRelations" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="contactWithCitId" minOccurs="0" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element ref="bv:locationAdress" minOccurs="0"/>
+								</xs:sequence>
+								<xs:attribute name="date" type="xs:date" use="required"/>
+								<xs:attribute name="citizenId" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="socialHistory" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="socialEvent" minOccurs="0" maxOccurs="unbounded"><!--It could be a participation to an event or being in a public place-->
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="placeOrEventName" type="xs:string"/>
+									<xs:choice>
+										 <xs:element name="eventId" type="xs:string"/>
+										 <xs:element name="placeId" type="xs:string"/>
+									</xs:choice>
+								</xs:sequence>
+								<xs:attribute name="date" type="xs:date"/>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:all>		
+	</xs:complexType>
+	
+	<xs:complexType name="medicalServices">
+		<xs:sequence>
+			<xs:element name="medicalService" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="name" type="xs:string"/>
+						<xs:element name="surname" type="xs:string" minOccurs="0"/>
+						<xs:element name="adress" type="xs:string"/>
+						<xs:element name="type">
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="hospital"/>
+									<xs:enumeration value="physician"/>
+									<xs:enumeration value="medical laboratory"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="speciality" type="xs:string" minOccurs="0"/>
+						<xs:element name="phoneNumber">
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:pattern value="\d{10}"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element ref="bv:mailAdress"/>
+					</xs:sequence>
+					<xs:attribute name="medSerId" type="xs:string" use="required"/>
+				</xs:complexType>
+			</xs:element>	
+		</xs:sequence>			
+	</xs:complexType>
+	
+	<xs:complexType name="eventsType">
+		<xs:sequence>
+			<xs:element name="event" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:all>
+						<xs:element name="name" type="xs:string"/>
+						<xs:element name="date" type="xs:date"/>
+						<xs:element name="endDate" type="xs:date"/>
+						<xs:element name="type" type="xs:string"/>
+						<xs:element ref="bv:locationAdress"/>
+					</xs:all>
+					<xs:attribute name="eventId" type="xs:string" use="required"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="publicPlacesType">
+		<xs:sequence>
+			<xs:element name="publicPlace" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:all>
+						<xs:element name="name" type="xs:string"/>
+						<xs:element name="type" type="xs:string"/>
+						<xs:element ref="bv:locationAdress"/>
+					</xs:all>
+					<xs:attribute name="publicPlaceId" type="xs:string" use="required"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>	
+	</xs:complexType>
+	
+	<!-- Creation of the element location adress which will be use several times in different part of the schema -->
+	<xs:element name="locationAdress">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="longitude" type="xs:float"/>
+					<xs:attribute name="latitude" type="xs:float"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	
+	<!-- Creation of the element location adress which will be use several times in different part of the schema -->
+	<xs:element name="mailAdress">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="[_\-a-zA-Z0-9\.\+]+@[a-zA-Z0-9](\.?[\-a-zA-Z0-9]*[a-zA-Z0-9])*"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+
+</xs:schema>
+	
